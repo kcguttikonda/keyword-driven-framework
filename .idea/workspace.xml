@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a113ec6f-f4f0-40f3-9157-2f5033f4bdf0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Actions/keywordActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Actions/keywordActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/TestData/TestCases.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/TestData/TestCases.xlsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,12 +55,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1498" />
+          <entry key="java" value="1548" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1498" />
+          <entry key="JAVA" value="1548" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -80,8 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="884">
-              <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
+            <state relative-caret-position="301">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -115,8 +115,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+            <state relative-caret-position="153">
+              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,10 +139,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/DataMapper/ExcelReader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java" />
         <option value="$PROJECT_DIR$/src/main/java/Actions/keywordActions.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java" />
       </list>
     </option>
   </component>
@@ -227,7 +227,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535387411347" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535389266871" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -245,7 +245,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.automationEngine.Engine">
     <configuration name="automationEngine" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="coreEngine.automationEngine" />
       <module name="Keyword-Driven-Framework" />
@@ -259,8 +259,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="automationEngine.Engine" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Keyword-Driven-Framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="coreEngine.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="coreEngine" />
+      <option name="MAIN_CLASS_NAME" value="coreEngine.automationEngine" />
+      <option name="METHOD_NAME" value="Engine" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.automationEngine" />
+      <item itemvalue="TestNG.automationEngine.Engine" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.automationEngine.Engine" />
         <item itemvalue="Application.automationEngine" />
       </list>
     </recent_temporary>
@@ -282,7 +305,7 @@
     <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2534413" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2534413" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -292,7 +315,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.32924694" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32924694" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32924694" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -314,13 +337,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/DataMapper/ExcelReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -343,10 +359,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+        <state relative-caret-position="153">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

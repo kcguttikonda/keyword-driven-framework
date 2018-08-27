@@ -3,13 +3,16 @@ import Actions.keywordActions;
 import DataMapper.ExcelReader;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Sheet;
+import org.testng.annotations.Test;
+
 
 import java.io.IOException;
 
 public class automationEngine {
     static Sheet testcasesData;
 
-    public static void main(String args[]) throws IOException, InvalidFormatException, InterruptedException {
+    @Test
+    public static void Engine() throws IOException, InvalidFormatException, InterruptedException {
 
         ExcelReader reader = new ExcelReader();
 
