@@ -1,6 +1,7 @@
 package Actions;
 
-import net.bytebuddy.asm.Advice;
+
+import org.apache.poi.ss.usermodel.Cell;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,29 +12,27 @@ import java.util.concurrent.TimeUnit;
 
 public class keywordActions
 {
+
     public static String Browser;
     public static WebDriver driver;
 
-
-    public keywordActions(String Browser){
-        this.Browser=Browser;
-    }
-
-
-    public static void openBrowser(){
+    public static void openBrowser(String Browser){
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\kguttiko\\Documents\\GitHub\\keyword-driven-framework\\Drivers\\chromedriver.exe");
         if(Browser.equalsIgnoreCase("firefox")){
             driver=new FirefoxDriver();
         }
         else if(Browser.equalsIgnoreCase("chrome")){
             driver=new ChromeDriver();
+            System.out.println(driver);
         }
         else if (Browser.equalsIgnoreCase("safari")){
             driver = new SafariDriver();
         }
     }
 
-    public static void openurl(){
-        driver.get("http://www.store.demoqa.com");
+    public static void openurl(String url)
+    {
+        driver.get(url);
     }
 
     public static void clearandenter(){
@@ -42,10 +41,12 @@ public class keywordActions
     }
 
     public static void enter(){
+
         driver.findElement(By.id("")).sendKeys("");
     }
 
     public static void click(){
+
         driver.findElement(By.id("login")).click();
     }
 
