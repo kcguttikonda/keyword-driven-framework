@@ -35,9 +35,10 @@ public class keywordActions
        wait = new WebDriverWait(driver,30);
     }
 
-    public static void openurl(String url) throws InterruptedException {
+    public static int openurl(String url) throws InterruptedException {
         driver.get(url);
         Thread.sleep(5000);
+        return 1;
 
     }
 
