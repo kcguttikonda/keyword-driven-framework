@@ -36,7 +36,6 @@ public class automationEngine {
             } else if (action.equalsIgnoreCase("closebrowser")) {
 
                 keywordActions.closeBrowser();
-                System.out.println("Teardown-complete");
             }
 
         }
