@@ -25,7 +25,7 @@ public class keywordActions
     static WebDriverWait wait;
     public static KeywordActionsReflection reflect = new KeywordActionsReflection();
     public static void openBrowser(String Browser){
-        System.setProperty("webdriver.chrome.driver","C:\\Flogo\\Project\\Keyword-Driven-Framework\\Drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\kguttiko\\Documents\\GitHub\\keyword-driven-framework\\Drivers\\chromedriver.exe");
         if(Browser.equalsIgnoreCase("firefox")){
             driver=new FirefoxDriver();
         }
@@ -40,6 +40,7 @@ public class keywordActions
     }
 
     public static void openurl(String Identifier, String Locator, String InputData, String Action) throws InterruptedException {
+
         driver.get(InputData);
         Thread.sleep(5000);
 
@@ -49,7 +50,6 @@ public class keywordActions
 
         //reflect.getMethodsIdentifiers();
         element =reflect.identifyLocator(Identifier,driver,Locator);
-
         element.clear();
         element.sendKeys(InputData);
     }
@@ -63,7 +63,6 @@ public class keywordActions
     public static void click(String Identifier, String Locator, String InputData, String Action) throws InterruptedException , NoSuchMethodException,InvocationTargetException ,IllegalAccessException{
         //reflect.getMethodsIdentifiers();
         element =reflect.identifyLocator(Identifier,driver,Locator);
-
         element.click();
         Thread.sleep(5000);
     }
@@ -75,7 +74,6 @@ public class keywordActions
     public static void verifytext(String Identifier, String Locator, String InputData, String Action) throws InterruptedException , NoSuchMethodException,InvocationTargetException ,IllegalAccessException{
         //reflect.getMethodsIdentifiers();
         element =reflect.identifyLocator(Identifier,driver,Locator);
-
         element.getText().equalsIgnoreCase(InputData);
     }
     public static void closeBrowser(String Identifier, String Locator, String InputData, String Action)

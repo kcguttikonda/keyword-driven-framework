@@ -21,9 +21,7 @@ public class KeywordActionsReflection {
     public void getMethods() throws NoSuchMethodException {
         actions =new keywordActions();
         method=cls.getDeclaredMethods();
-        /*for (Method method:cls.getDeclaredMethods()) {
-            System.out.println(method);
-        }*/
+
     }
 
     public void performAction(String Identifier, String InputLocator, String InputData, String Action) throws InvocationTargetException, IllegalAccessException {
@@ -31,7 +29,6 @@ public class KeywordActionsReflection {
             if(method[i].getName().equalsIgnoreCase(Action)){
                 System.out.println("inside invoke condition" + method[i]);
                 method[i].invoke(actions,Identifier,InputLocator,InputData,Action);
-
                 break;
             }
         }
@@ -49,7 +46,6 @@ public class KeywordActionsReflection {
             if(method[i].getName().equalsIgnoreCase(identifier)){
                 System.out.println("inside invoke condition" + method[i]);
                 element= (WebElement) method[i].invoke(locators,driver,locator);
-
                 break;
             }
         }
