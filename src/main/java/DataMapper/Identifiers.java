@@ -10,8 +10,9 @@ public class Identifiers {
 
 
 
-    public WebElement xpath(WebDriver driver,String locator){
-
+    public WebElement xpath(WebDriver driver,String locator) throws InterruptedException {
+        System.out.println("inside"+locator);
+        Thread.sleep(3000);
     WebElement element = driver.findElement(By.xpath(locator));
 
     return element;

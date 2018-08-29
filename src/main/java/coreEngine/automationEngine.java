@@ -21,18 +21,18 @@ public class automationEngine {
 
         ExcelReader reader = new ExcelReader();
 
-        testcasesData = reader.TestCaseReader("C:\\Users\\kguttiko\\Documents\\GitHub\\keyword-driven-framework\\src\\main\\resources\\TestData\\TestCases.xlsx");
+        testcasesData = reader.TestCaseReader("C:\\Flogo\\Project\\Keyword-Driven-Framework\\src\\main\\resources\\TestData\\TestCases.xlsx");
 
         System.out.println(testcasesData.getLastRowNum());
-
+        keywordActions.openBrowser("chrome");
         for (int i = 1; i <= testcasesData.getLastRowNum(); i++) {
             //testdata.getVariables(testcasesData,i);
             testdata.setVariables(testcasesData,i);
             reflection.getMethods();
-            System.out.println(testcasesData.getRow(1).getCell(1).toString());
+            //System.out.println(testcasesData.getRow(1).getCell(1).toString());
             //System.out.println(KeywordActionsReflection.method);
-            System.out.println(TestDataVariables.Action);
-            keywordActions.openBrowser(TestDataVariables.Browser);
+            //System.out.println(TestDataVariables.Action);
+
             reflection.performAction(TestDataVariables.Identifier,TestDataVariables.InputLocator,TestDataVariables.InputData,TestDataVariables.Action);
 
 
