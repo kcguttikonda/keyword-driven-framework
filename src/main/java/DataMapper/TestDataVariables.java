@@ -38,21 +38,6 @@ public class TestDataVariables {
 
 
     public void setVariables(Sheet testDataSheet, int rowId) {
-/*
-        for(Object key:testDataVariableList.keySet())
-
-            TestCaseID = (int) testDataSheet.getRow(rowId).getCell(rowId, Row.MissingCellPolicy.CREATE_NULL_AS_BLANK).getNumericCellValue();
-            TestStepNumber = (int) testDataVariableList.get(1);
-            TestCaseTitle = (String) testDataVariableList.get(2);
-            Description = (String) testDataVariableList.get(3);
-            Identifier = (String) testDataVariableList.get(4);
-            InputLocator = (String) testDataVariableList.get(5);
-            InputData = (String) testDataVariableList.get(6);
-            Action = (String) testDataVariableList.get(7);
-            Browser = (String) testDataVariableList.get(8);
-            OS = (String) testDataVariableList.get(9);
-*/
-
             TestCaseID = (int) testDataSheet.getRow(rowId).getCell(0, Row.MissingCellPolicy.CREATE_NULL_AS_BLANK).getNumericCellValue();
             TestStepNumber = (int) testDataSheet.getRow(rowId).getCell(1, Row.MissingCellPolicy.CREATE_NULL_AS_BLANK).getNumericCellValue();
             TestCaseTitle = testDataSheet.getRow(rowId).getCell(2, Row.MissingCellPolicy.CREATE_NULL_AS_BLANK).getStringCellValue();
@@ -65,15 +50,15 @@ public class TestDataVariables {
             OS = testDataSheet.getRow(rowId).getCell(9, Row.MissingCellPolicy.CREATE_NULL_AS_BLANK).getStringCellValue();
 
             System.out.println(TestCaseID);
-        System.out.println(TestStepNumber);
-        System.out.println(TestCaseTitle);
-        System.out.println(Description);
-        System.out.println(Identifier);
-        System.out.println(InputLocator);
-        System.out.println(InputData);
-        System.out.println(Action);
-        System.out.println(Browser);
-        System.out.println(OS);
+            System.out.println(TestStepNumber);
+            System.out.println(TestCaseTitle);
+            System.out.println(Description);
+            System.out.println(Identifier);
+            System.out.println(InputLocator);
+            System.out.println(InputData);
+            System.out.println(Action);
+            System.out.println(Browser);
+            System.out.println(OS);
 
         }
 

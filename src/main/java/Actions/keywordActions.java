@@ -2,6 +2,7 @@ package Actions;
 
 
 import DataMapper.Identifiers;
+import DataMapper.TestDataVariables;
 import coreEngine.KeywordActionsReflection;
 import org.apache.poi.ss.usermodel.Cell;
 import org.openqa.selenium.By;
@@ -25,22 +26,25 @@ public class keywordActions
     static WebDriverWait wait;
     public static KeywordActionsReflection reflect = new KeywordActionsReflection();
     public static void openBrowser(String Browser){
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\kguttiko\\Documents\\GitHub\\keyword-driven-framework\\Drivers\\chromedriver.exe");
-        if(Browser.equalsIgnoreCase("firefox")){
-            driver=new FirefoxDriver();
-        }
-        else if(Browser.equalsIgnoreCase("chrome")){
-            driver=new ChromeDriver();
-            System.out.println(driver);
-        }
-        else if (Browser.equalsIgnoreCase("safari")){
-            driver = new SafariDriver();
-        }
-       wait = new WebDriverWait(driver,30);
+
     }
 
     public static void openurl(String Identifier, String Locator, String InputData, String Action) throws InterruptedException {
 
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\kguttiko\\Documents\\GitHub\\keyword-driven-framework\\Drivers\\chromedriver.exe");
+        System.setProperty("webdriver.firefox.driver","C:\\Users\\kguttiko\\Documents\\GitHub\\keyword-driven-framework\\Drivers\\chromedriver.exe");
+        //System.setProperty("webdriver.safari.driver","C:\\Users\\kguttiko\\Documents\\GitHub\\keyword-driven-framework\\Drivers\\chromedriver.exe");
+        if(TestDataVariables.Browser.equalsIgnoreCase("firefox")){
+            driver=new FirefoxDriver();
+        }
+        else if(TestDataVariables.Browser.equalsIgnoreCase("chrome")){
+            driver=new ChromeDriver();
+            System.out.println(driver);
+        }
+        else if (TestDataVariables.Browser.equalsIgnoreCase("safari")){
+            driver = new SafariDriver();
+        }
+        wait = new WebDriverWait(driver,30);
         driver.get(InputData);
         Thread.sleep(5000);
 
