@@ -2,6 +2,7 @@ package coreEngine;
 
 import Actions.keywordActions;
 import DataMapper.Identifiers;
+import DataMapper.TestDataVariables;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
@@ -23,12 +24,11 @@ public class KeywordActionsReflection {
         }
     }
 
-    public void performAction(String Keyword,String data) throws InvocationTargetException, IllegalAccessException {
+    public void performAction(String Identifier, String InputLocator, String InputData, String Action) throws InvocationTargetException, IllegalAccessException {
         for(int i=0;i<method.length;i++){
-            if(method[i].getName().equalsIgnoreCase(Keyword)){
+            if(method[i].getName().equalsIgnoreCase(Action)){
                 System.out.println("inside invoke condition" + method[i]);
-                method[i].invoke(actions,data);
-                System.out.println(method[i].getName()+" count"+method[i].getParameterCount());
+                method[i].invoke(actions,Identifier,InputLocator,InputData,Action);
 
                 break;
             }
