@@ -4,11 +4,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+
+
 public class Identifiers {
 
 
 
-public WebElement xpath(WebDriver driver,String locator){
+    public WebElement xpath(WebDriver driver,String locator){
 
     WebElement element = driver.findElement(By.xpath(locator));
 

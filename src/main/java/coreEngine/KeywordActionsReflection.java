@@ -1,6 +1,8 @@
 package coreEngine;
 
 import Actions.keywordActions;
+import DataMapper.Identifiers;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
 import java.lang.reflect.InvocationTargetException;
@@ -9,7 +11,9 @@ import java.lang.reflect.Method;
 public class KeywordActionsReflection {
     public static Method[] method;
     public static keywordActions actions;
+    public static Identifiers locators;
     static Class cls = keywordActions.class;
+    static Class identifierclass = Identifiers.class;
 
     public void getMethods() throws NoSuchMethodException {
         actions =new keywordActions();
@@ -24,8 +28,27 @@ public class KeywordActionsReflection {
             if(method[i].getName().equalsIgnoreCase(Keyword)){
                 System.out.println("inside invoke condition" + method[i]);
                 method[i].invoke(actions,data);
+                System.out.println(method[i].getName()+" count"+method[i].getParameterCount());
+
                 break;
             }
         }
     }
+
+    public void getMethodsIdentifiers() throws NoSuchMethodException {
+        locators = new Identifiers();
+        method=identifierclass.getDeclaredMethods();
+    }
+
+    public void identifyLocator(String identifier, WebDriver driver) throws InvocationTargetException, IllegalAccessException {
+        for(int i=0;i<method.length;i++){
+            if(method[i].getName().equalsIgnoreCase(identifier)){
+                System.out.println("inside invoke condition" + method[i]);
+                method[i].invoke(locators,driver);
+
+                break;
+            }
+        }
+    }
+
 }
