@@ -19,11 +19,11 @@ public class KeywordActionsReflection {
         }
     }
 
-    public void performAction(String Keyword,String data) throws InvocationTargetException, IllegalAccessException {
+    public void performAction(String Identifier, String Locator, String InputData, String Action) throws InvocationTargetException, IllegalAccessException {
         for(int i=0;i<method.length;i++){
-            if(method[i].getName().equalsIgnoreCase(Keyword)){
+            if(method[i].getName().equalsIgnoreCase(Action)){
                 System.out.println("inside invoke condition" + method[i]);
-                method[i].invoke(actions,data);
+                method[i].invoke(actions,Identifier,Locator,InputData,Action);
                 break;
             }
         }

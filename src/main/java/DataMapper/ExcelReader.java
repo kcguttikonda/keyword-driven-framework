@@ -4,9 +4,10 @@ import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.testng.annotations.Test;
 
 import java.io.*;
-
+@Test
 public class ExcelReader {
     static Sheet sheet;
     public Sheet TestCaseReader(String path) throws IOException, InvalidFormatException {
@@ -24,6 +25,7 @@ public class ExcelReader {
         //GetSheet
         sheet = workbook.getSheet("TestCases");
         return sheet;
+
     }
 
 }

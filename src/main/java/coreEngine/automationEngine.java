@@ -1,6 +1,8 @@
 package coreEngine;
 import Actions.keywordActions;
+import DataMapper.TestDataVariables;
 import DataMapper.ExcelReader;
+import DataMapper.TestDataVariables;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.testng.annotations.Test;
@@ -11,6 +13,7 @@ import java.lang.reflect.Method;
 public class automationEngine {
     static Sheet testcasesData;
     static KeywordActionsReflection reflection = new KeywordActionsReflection();
+    static TestDataVariables testdata = new TestDataVariables();
     static keywordActions actions;
 
     @Test
@@ -23,13 +26,14 @@ public class automationEngine {
         System.out.println(testcasesData.getLastRowNum());
 
         for (int i = 1; i <= testcasesData.getLastRowNum(); i++) {
-            keywordActions.openBrowser("chrome");
-            String keyword = testcasesData.getRow(i).getCell(6).getStringCellValue();
-            String data = testcasesData.getRow(i).getCell(5).getStringCellValue();
+            //testdata.getVariables(testcasesData,i);
+            testdata.setVariables(testcasesData,i);
             reflection.getMethods();
+            System.out.println(testcasesData.getRow(1).getCell(1).toString());
             //System.out.println(KeywordActionsReflection.method);
-            System.out.println(keyword);
-            reflection.performAction(keyword,data);
+            System.out.println(TestDataVariables.Action);
+            keywordActions.openBrowser(TestDataVariables.Browser);
+            reflection.performAction(TestDataVariables.Identifier,TestDataVariables.InputLocator,TestDataVariables.InputData,TestDataVariables.Action);
 
 
 
