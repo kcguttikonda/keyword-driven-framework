@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a113ec6f-f4f0-40f3-9157-2f5033f4bdf0" name="Default Changelist" comment="Added methods to Identifiers class">
+    <list default="true" id="a113ec6f-f4f0-40f3-9157-2f5033f4bdf0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Actions/keywordActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Actions/keywordActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DataMapper/Identifiers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataMapper/Identifiers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coreEngine/KeywordActionsReflection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreEngine/KeywordActionsReflection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/TestData/TestCases.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/TestData/TestCases.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Actions/keywordActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Actions/keywordActions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DataMapper/Identifiers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DataMapper/Identifiers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/coreEngine/KeywordActionsReflection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/coreEngine/KeywordActionsReflection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataMapper/ExcelReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DataMapper/ExcelReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestData/TestCases.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestData/TestCases.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/coreEngine/automationEngine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/coreEngine/automationEngine.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -110,13 +106,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1239" />
+          <entry key="java" value="1302" />
           <entry key="txt" value="101" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1239" />
+          <entry key="JAVA" value="1302" />
           <entry key="PLAIN_TEXT" value="101" />
         </counts>
       </usages-collector>
@@ -133,10 +129,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Actions/keywordActions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
+            <state relative-caret-position="279">
               <caret line="80" column="102" selection-start-line="80" selection-start-column="102" selection-end-line="80" selection-end-column="102" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -160,8 +156,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="160">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -183,11 +179,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/DataMapper/Identifiers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+            <state relative-caret-position="284">
+              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -233,10 +229,10 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/DataMapper/ExcelReader.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java" />
         <option value="$PROJECT_DIR$/src/main/java/coreEngine/KeywordActionsReflection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DataMapper/Identifiers.java" />
         <option value="$PROJECT_DIR$/src/main/java/Actions/keywordActions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DataMapper/Identifiers.java" />
       </list>
     </option>
   </component>
@@ -337,7 +333,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535553528814" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535554717024" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -616,28 +612,17 @@
       <option name="project" value="LOCAL" />
       <updated>1535524596890</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added methods to Identifiers class">
+      <created>1535553614114</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1535553614114</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="_default_ - 2018.08.28 at 11h 22m 27s.xml">
-      <configuration name="&lt;default&gt;" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="automationEngine_Engine - 2018.08.29 at 11h 32m 49s.xml">
-      <configuration name="automationEngine.Engine" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="automationEngine - 2018.08.29 at 11h 34m 40s.xml">
-      <configuration name="automationEngine" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="automationEngine_Engine - 2018.08.29 at 11h 35m 36s.xml">
-      <configuration name="automationEngine.Engine" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="automationEngine_Engine - 2018.08.29 at 19h 47m 08s.xml">
-      <configuration name="automationEngine.Engine" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="automationEngine_Engine - 2018.08.29 at 19h 50m 34s.xml">
-      <configuration name="automationEngine.Engine" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="automationEngine_Engine - 2018.08.29 at 19h 53m 18s.xml">
       <configuration name="automationEngine.Engine" configurationId="TestNG" />
     </history-entry>
@@ -648,6 +633,24 @@
       <configuration name="automationEngine.Engine" configurationId="TestNG" />
     </history-entry>
     <history-entry file="automationEngine_Engine - 2018.08.29 at 20h 07m 52s.xml">
+      <configuration name="automationEngine.Engine" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="automationEngine_Engine - 2018.08.29 at 20h 09m 41s.xml">
+      <configuration name="automationEngine.Engine" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="automationEngine_Engine - 2018.08.29 at 20h 16m 47s.xml">
+      <configuration name="automationEngine.Engine" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="automationEngine_Engine - 2018.08.29 at 20h 16m 59s.xml">
+      <configuration name="automationEngine.Engine" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="automationEngine_Engine - 2018.08.29 at 20h 17m 08s.xml">
+      <configuration name="automationEngine.Engine" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="automationEngine_Engine - 2018.08.29 at 20h 19m 17s.xml">
+      <configuration name="automationEngine.Engine" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="automationEngine_Engine - 2018.08.29 at 20h 28m 09s.xml">
       <configuration name="automationEngine.Engine" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -664,7 +667,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49878544" weight="0.6530249" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49878544" visible="true" weight="0.25266904" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -689,9 +692,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="demo commit" />
     <MESSAGE value="Created a Identifiers class" />
-    <MESSAGE value="Added methods to Identifiers class" />
     <MESSAGE value="Added methods to reflection class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added methods to reflection class" />
+    <MESSAGE value="Added methods to Identifiers class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added methods to Identifiers class" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/target/surefire-reports/2018-08-28T11-26-04_336-jvmRun1.dump" />
@@ -722,13 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataMapper/TestDataVariables.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/coreEngine/KeywordActionsReflection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -739,30 +735,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataMapper/Identifiers.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Actions/keywordActions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        <state relative-caret-position="279">
+          <caret line="80" column="102" selection-start-line="80" selection-start-column="102" selection-end-line="80" selection-end-column="102" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataMapper/TestDataVariables.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="160">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Actions/keywordActions.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataMapper/Identifiers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="80" column="102" selection-start-line="80" selection-start-column="102" selection-end-line="80" selection-end-column="102" />
+        <state relative-caret-position="284">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

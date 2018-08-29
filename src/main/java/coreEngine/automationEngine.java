@@ -24,10 +24,15 @@ public class automationEngine {
         testcasesData = reader.TestCaseReader("C:\\Flogo\\Project\\Keyword-Driven-Framework\\src\\main\\resources\\TestData\\TestCases.xlsx");
 
         System.out.println(testcasesData.getLastRowNum());
-        keywordActions.openBrowser("chrome");
+        //keywordActions.openBrowser("chrome");
         for (int i = 1; i <= testcasesData.getLastRowNum(); i++) {
+
+
             //testdata.getVariables(testcasesData,i);
             testdata.setVariables(testcasesData,i);
+            if(i==1){
+                keywordActions.openBrowser(TestDataVariables.Browser);
+            }
             reflection.getMethods();
             //System.out.println(testcasesData.getRow(1).getCell(1).toString());
             //System.out.println(KeywordActionsReflection.method);
