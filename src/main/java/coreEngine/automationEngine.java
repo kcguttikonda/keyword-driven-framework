@@ -31,7 +31,7 @@ public class automationEngine {
 
         System.out.println(testcasesData.getLastRowNum());
         for (String key:testCaseRows.keySet()) {
-            System.out.println(String.format("Executing TestCase with ID: %d",key));
+            System.out.println(String.format("Executing TestCase with ID: %S",key));
             keywordActions.createDriverInstance(ConfigBuilder.Browser, ConfigBuilder.BrowserDriverPath);
             //System.out.println(key );
             for(int i=0;i<testCaseRows.get(key).size();i++) {
@@ -40,7 +40,7 @@ public class automationEngine {
                 reflection.getMethods();
                 reflection.performAction(TestDataVariables.Identifier, TestDataVariables.InputLocator, TestDataVariables.InputData, TestDataVariables.Action);
             }
-            System.out.println(String.format("Executing Completes for TestCase with ID: %d",key));
+            System.out.println(String.format("Executing Completes for TestCase with ID: %S",key));
         }
 
 
