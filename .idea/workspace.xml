@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a113ec6f-f4f0-40f3-9157-2f5033f4bdf0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataMapper/TestCaseRowIndexes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataMapper/TestCaseRowIndexes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -57,16 +55,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="6931" />
-          <entry key="txt" value="419" />
+          <entry key="java" value="7007" />
+          <entry key="txt" value="595" />
           <entry key="xml" value="17" />
           <entry key="yml" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6931" />
-          <entry key="PLAIN_TEXT" value="419" />
+          <entry key="JAVA" value="7007" />
+          <entry key="PLAIN_TEXT" value="595" />
           <entry key="XML" value="17" />
           <entry key="YAML" value="37" />
         </counts>
@@ -138,8 +136,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="33" column="104" selection-start-line="33" selection-start-column="104" selection-end-line="33" selection-end-column="104" />
+            <state relative-caret-position="188">
+              <caret line="42" column="70" selection-start-line="42" selection-start-column="70" selection-end-line="42" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -332,7 +330,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535646102090" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535646270151" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -1334,7 +1332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535641634991</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="-Implemented TestCaseRowIndexesClass which enables framework to run the test cases based upon the entries from config.yml">
+      <created>1535646165018</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1535646165018</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1440,7 +1445,8 @@
     <MESSAGE value="CleanedUpComments and started implementing multiple testcases" />
     <MESSAGE value="-updated Engine to handle more than one test case in the excel&#10;-updated keywordActions class- openurl method to create driver based upon the TestDataVariables.Browser" />
     <MESSAGE value="-Implemented Config.yaml and its class" />
-    <option name="LAST_COMMIT_MESSAGE" value="-Implemented Config.yaml and its class" />
+    <MESSAGE value="-Implemented TestCaseRowIndexesClass which enables framework to run the test cases based upon the entries from config.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Implemented TestCaseRowIndexesClass which enables framework to run the test cases based upon the entries from config.yml" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/target/classes/Actions/keywordActions.class">
@@ -1548,8 +1554,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="33" column="104" selection-start-line="33" selection-start-column="104" selection-end-line="33" selection-end-column="104" />
+        <state relative-caret-position="188">
+          <caret line="42" column="70" selection-start-line="42" selection-start-column="70" selection-end-line="42" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
