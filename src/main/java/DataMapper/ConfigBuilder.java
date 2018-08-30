@@ -19,9 +19,10 @@ public class ConfigBuilder {
     public static String OS;
     public static String TestCasesPath;
     public static String BrowserDriverPath;
+    public static int numOfTestCases;
 
-    @Test
-    public void configReader() throws FileNotFoundException {
+
+    public static void configReader() throws FileNotFoundException {
         Yaml yaml = new Yaml();
 
         File configFile = new File("config.yml");
@@ -48,6 +49,7 @@ public class ConfigBuilder {
             }
         }
 
+        numOfTestCases = TestCases.size();
         Browser = configMap.get("Browser").toString();
         OS = configMap.get("OS").toString();
         TestCasesPath=configMap.get("TestCasesPath").toString();

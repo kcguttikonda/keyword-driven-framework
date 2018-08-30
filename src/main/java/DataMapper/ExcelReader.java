@@ -11,7 +11,7 @@ import java.io.*;
 public class ExcelReader {
     static Sheet sheet;
 
-    public Sheet TestCaseReader(String path) throws IOException, InvalidFormatException {
+    public static Sheet TestCaseReader(String path) throws IOException, InvalidFormatException {
         //open a file
         File dataFile = new File(path);
         //File dataFile = new File("C:\\Users\\kguttiko\\Documents\\GitHub\\keyword-driven-framework\\src\\main\\resources\\TestData\\TestCases.xlsx");

@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a113ec6f-f4f0-40f3-9157-2f5033f4bdf0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/DataMapper/ConfigBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DataMapper/TestCaseRowIndexes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Actions/keywordActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Actions/keywordActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataMapper/TestDataVariables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataMapper/TestDataVariables.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coreEngine/KeywordActionsReflection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreEngine/KeywordActionsReflection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DataMapper/ConfigBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataMapper/ConfigBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DataMapper/ExcelReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataMapper/ExcelReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/coreEngine/automationEngine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/coreEngine/automationEngine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Actions/keywordActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Actions/keywordActions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/coreEngine/KeywordActionsReflection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/coreEngine/KeywordActionsReflection.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -62,16 +60,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4094" />
-          <entry key="txt" value="379" />
+          <entry key="java" value="5434" />
+          <entry key="txt" value="419" />
           <entry key="xml" value="17" />
           <entry key="yml" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4094" />
-          <entry key="PLAIN_TEXT" value="379" />
+          <entry key="JAVA" value="5434" />
+          <entry key="PLAIN_TEXT" value="419" />
           <entry key="XML" value="17" />
           <entry key="YAML" value="21" />
         </counts>
@@ -79,14 +77,14 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="dump" value="1" />
-          <entry key="java" value="4" />
+          <entry key="java" value="5" />
           <entry key="xml" value="2" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="4" />
+          <entry key="JAVA" value="5" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="2" />
           <entry key="YAML" value="1" />
@@ -143,8 +141,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/DataMapper/ExcelReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="147">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -155,8 +153,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/DataMapper/ConfigBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="34" column="63" lean-forward="true" selection-start-line="34" selection-start-column="63" selection-end-line="34" selection-end-column="63" />
+            <state relative-caret-position="-373">
+              <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="101">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -165,14 +175,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/DataMapper/TestCaseRowIndexes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="79">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1948#1949#0" expanded="true" />
-                <element signature="e#1977#1978#0" expanded="true" />
+                <element signature="e#299#313#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -237,14 +246,15 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/DataMapper/Identifiers.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DataMapper/ExcelReader.java" />
         <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/src/main/java/coreEngine/KeywordActionsReflection.java" />
         <option value="$PROJECT_DIR$/src/main/java/DataMapper/TestDataVariables.java" />
         <option value="$PROJECT_DIR$/config.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/DataMapper/ConfigBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/Actions/keywordActions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DataMapper/ConfigBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DataMapper/ExcelReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DataMapper/TestCaseRowIndexes.java" />
       </list>
     </option>
   </component>
@@ -350,7 +360,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535614726714" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535634757795" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -1155,7 +1165,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/kguttiko/Documents/GitHub/keyword-driven-framework/testng.xml">
+  <component name="RunManager" selected="Application.TestCaseRowIndexes">
+    <configuration name="TestCaseRowIndexes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DataMapper.TestCaseRowIndexes" />
+      <module name="Keyword-Driven-Framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DataMapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="C:/Users/kguttiko/Documents/GitHub/keyword-driven-framework/testng.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Keyword-Driven-Framework" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -1166,7 +1189,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConfigBuilder" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCaseRowIndexes.setRowIndexes" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Keyword-Driven-Framework" />
       <extension name="coverage">
         <pattern>
@@ -1175,24 +1198,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="DataMapper" />
-      <option name="MAIN_CLASS_NAME" value="DataMapper.ConfigBuilder" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConfigBuilder.configReader" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Keyword-Driven-Framework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="DataMapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="DataMapper" />
-      <option name="MAIN_CLASS_NAME" value="DataMapper.ConfigBuilder" />
-      <option name="METHOD_NAME" value="configReader" />
+      <option name="MAIN_CLASS_NAME" value="DataMapper.TestCaseRowIndexes" />
+      <option name="METHOD_NAME" value="setRowIndexes" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -1235,19 +1242,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.automationEngine.Engine" />
       <item itemvalue="TestNG.C:/Users/kguttiko/Documents/GitHub/keyword-driven-framework/testng.xml" />
-      <item itemvalue="TestNG.ConfigBuilder.configReader" />
-      <item itemvalue="TestNG.ConfigBuilder" />
       <item itemvalue="TestNG.automationEngine" />
+      <item itemvalue="TestNG.TestCaseRowIndexes.setRowIndexes" />
+      <item itemvalue="TestNG.automationEngine.Engine" />
+      <item itemvalue="Application.TestCaseRowIndexes" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestCaseRowIndexes" />
+        <item itemvalue="TestNG.TestCaseRowIndexes.setRowIndexes" />
+        <item itemvalue="TestNG.automationEngine.Engine" />
         <item itemvalue="TestNG.C:/Users/kguttiko/Documents/GitHub/keyword-driven-framework/testng.xml" />
         <item itemvalue="TestNG.automationEngine" />
-        <item itemvalue="TestNG.ConfigBuilder.configReader" />
-        <item itemvalue="TestNG.ConfigBuilder" />
-        <item itemvalue="TestNG.automationEngine.Engine" />
       </list>
     </recent_temporary>
   </component>
@@ -1325,16 +1332,17 @@
       <option name="project" value="LOCAL" />
       <updated>1535563090983</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="-Implemented Config.yaml and its class">
+      <created>1535620423922</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1535620423922</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ConfigBuilder_configReader - 2018.08.30 at 12h 34m 06s.xml">
-      <configuration name="ConfigBuilder.configReader" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ConfigBuilder_configReader - 2018.08.30 at 12h 35m 55s.xml">
-      <configuration name="ConfigBuilder.configReader" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="ConfigBuilder_configReader - 2018.08.30 at 12h 36m 11s.xml">
       <configuration name="ConfigBuilder.configReader" configurationId="TestNG" />
     </history-entry>
@@ -1358,6 +1366,12 @@
     </history-entry>
     <history-entry file="C__Users_kguttiko_Documents_GitHub_keyword-driven-framework_testng_xml - 2018.08.30 at 13h 07m 35s.xml">
       <configuration name="C:/Users/kguttiko/Documents/GitHub/keyword-driven-framework/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="automationEngine_Engine - 2018.08.30 at 16h 05m 00s.xml">
+      <configuration name="automationEngine.Engine" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestCaseRowIndexes_setRowIndexes - 2018.08.30 at 16h 05m 07s.xml">
+      <configuration name="TestCaseRowIndexes.setRowIndexes" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -1430,7 +1444,8 @@
     <MESSAGE value="Added methods to Identifiers class" />
     <MESSAGE value="CleanedUpComments and started implementing multiple testcases" />
     <MESSAGE value="-updated Engine to handle more than one test case in the excel&#10;-updated keywordActions class- openurl method to create driver based upon the TestDataVariables.Browser" />
-    <option name="LAST_COMMIT_MESSAGE" value="-updated Engine to handle more than one test case in the excel&#10;-updated keywordActions class- openurl method to create driver based upon the TestDataVariables.Browser" />
+    <MESSAGE value="-Implemented Config.yaml and its class" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Implemented Config.yaml and its class" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/target/classes/Actions/keywordActions.class">
@@ -1462,23 +1477,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataMapper/ExcelReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/DataMapper/TestDataVariables.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1493,16 +1491,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="42" column="52" lean-forward="true" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataMapper/ConfigBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="34" column="63" lean-forward="true" selection-start-line="34" selection-start-column="63" selection-end-line="34" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1526,14 +1514,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataMapper/ConfigBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="-373">
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1948#1949#0" expanded="true" />
-            <element signature="e#1977#1978#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataMapper/ExcelReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataMapper/TestCaseRowIndexes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#299#313#0" expanded="true" />
           </folding>
         </state>
       </provider>
