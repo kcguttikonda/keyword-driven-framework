@@ -34,10 +34,6 @@ public class KeywordActionsReflection {
         }
     }
 
-    public void getMethodsIdentifiers() throws NoSuchMethodException {
-
-    }
-
     public WebElement identifyLocator(String identifier, WebDriver driver,String locator) throws InvocationTargetException, IllegalAccessException {
         locators = new Identifiers();
         method=identifierclass.getDeclaredMethods();
