@@ -24,6 +24,8 @@ public class TestDataVariables {
 
 
     public void setVariables(Sheet testDataSheet, int rowId) {
+
+        try{
             TestCaseID = (int) testDataSheet.getRow(rowId).getCell(0, Row.MissingCellPolicy.CREATE_NULL_AS_BLANK).getNumericCellValue();
             TestStepNumber = (int) testDataSheet.getRow(rowId).getCell(1, Row.MissingCellPolicy.CREATE_NULL_AS_BLANK).getNumericCellValue();
             TestCaseTitle = testDataSheet.getRow(rowId).getCell(2, Row.MissingCellPolicy.CREATE_NULL_AS_BLANK).getStringCellValue();
@@ -33,19 +35,24 @@ public class TestDataVariables {
             InputData = testDataSheet.getRow(rowId).getCell(6, Row.MissingCellPolicy.CREATE_NULL_AS_BLANK).getStringCellValue();
             Action = testDataSheet.getRow(rowId).getCell(7, Row.MissingCellPolicy.CREATE_NULL_AS_BLANK).getStringCellValue();
 
-
-            System.out.println(TestCaseID);
-            System.out.println(TestStepNumber);
-            System.out.println(TestCaseTitle);
-            System.out.println(Description);
-            System.out.println(Identifier);
-            System.out.println(InputLocator);
-            System.out.println(InputData);
-            System.out.println(Action);
-
-
         }
 
+        catch (Exception e){
+            System.out.println("unable to setvaribales "+e.getMessage());
         }
+
+        System.out.println(TestCaseID);
+        System.out.println(TestStepNumber);
+        System.out.println(TestCaseTitle);
+        System.out.println(Description);
+        System.out.println(Identifier);
+        System.out.println(InputLocator);
+        System.out.println(InputData);
+        System.out.println(Action);
+
+
+    }
+
+}
 
 

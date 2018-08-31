@@ -15,25 +15,31 @@ public class TestCaseRowIndexes {
     static int i = 0;
     static int currentKey,currentTestCaseValue;
     public static Map<String, List> testCaseRows = new HashMap<String, List>();
-    public void buildTestCasesList(List TestCases,Sheet testcasesData) throws IOException, InvalidFormatException {
-
-        while(i<TestCases.size()) {
-            List rowValueList = new ArrayList();
-            for(int j=1;j<=ExcelReader.sheet.getLastRowNum();j++) {
-                if(testcasesData.getRow(j) == null){
-                    //System.out.println("im in if");
-                    continue;
-                }
-                else{
-                    currentKey = Integer.parseInt(TestCases.get(i).toString());
-                    currentTestCaseValue = (int) Double.parseDouble(ExcelReader.sheet.getRow(j).getCell(0).toString());
-                    if (currentTestCaseValue == currentKey){
-                        rowValueList.add(ExcelReader.sheet.getRow(j).getCell(0).getRowIndex());
-                        testCaseRows.put((TestCases.get(i).toString()),rowValueList);
+    public void buildTestCasesList(List TestCases,Sheet testcasesData)  {
+        try{
+            while(i<TestCases.size()) {
+                List rowValueList = new ArrayList();
+                for(int j=1;j<=ExcelReader.sheet.getLastRowNum();j++) {
+                    if(testcasesData.getRow(j) == null){
+                        //System.out.println("im in if");
+                        continue;
                     }
-                }
-            }i++;
+                    else{
+                        currentKey = Integer.parseInt(TestCases.get(i).toString());
+                        currentTestCaseValue = (int) Double.parseDouble(ExcelReader.sheet.getRow(j).getCell(0).toString());
+                        if (currentTestCaseValue == currentKey){
+                            rowValueList.add(ExcelReader.sheet.getRow(j).getCell(0).getRowIndex());
+                            testCaseRows.put((TestCases.get(i).toString()),rowValueList);
+                        }
+                    }
+                }i++;
+            }
         }
+        catch (Exception e){
+            System.out.println("unable to get row index"+e.getMessage());
+        }
+
+
         System.out.println(testCaseRows);
     }
 }
