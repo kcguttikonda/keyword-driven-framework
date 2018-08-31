@@ -24,64 +24,102 @@ public class keywordActions
     static WebDriverWait wait;
     public static KeywordActionsReflection reflect = new KeywordActionsReflection();
 
-    public static void openurl(String Identifier, String Locator, String InputData, String Action) throws InterruptedException {
+    public static void openurl(String Identifier, String Locator, String InputData, String Action) {
 
+        try{
+            wait = new WebDriverWait(driver,30);
+            driver.get(InputData);
+            Thread.sleep(5000);
+        }
+        catch (Exception e){
+            System.out.println("unable open url"+e.getMessage());
+        }
 
-        wait = new WebDriverWait(driver,30);
-        driver.get(InputData);
-        Thread.sleep(5000);
 
     }
 
-    public static void createDriverInstance(String Browser,String Driverpath){
-        System.setProperty("webdriver.chrome.driver",Driverpath);
-        System.setProperty("webdriver.firefox.driver",Driverpath);
+    public static void createDriverInstance(String Browser,String Driverpath) {
+        System.setProperty("webdriver.chrome.driver", Driverpath);
+        System.setProperty("webdriver.firefox.driver", Driverpath);
         //System.setProperty("webdriver.safari.driver","C:\\Users\\kguttiko\\Documents\\GitHub\\keyword-driven-framework\\Drivers\\chromedriver.exe");
-        if(Browser.equalsIgnoreCase("firefox")){
-            driver=new FirefoxDriver();
+        try {
+            if (Browser.equalsIgnoreCase("firefox")) {
+                driver = new FirefoxDriver();
+            } else if (Browser.equalsIgnoreCase("chrome")) {
+                driver = new ChromeDriver();
+                System.out.println(driver);
+            } else if (Browser.equalsIgnoreCase("safari")) {
+                driver = new SafariDriver();
+            }
+        } catch (Exception e) {
+            System.out.println("unable to invoke browser" + e.getMessage());
+
         }
-        else if(Browser.equalsIgnoreCase("chrome")){
-            driver=new ChromeDriver();
-            System.out.println(driver);
+    }
+    public static void clearandenter(String Identifier, String Locator, String InputData, String Action) {
+
+        try{
+            element =reflect.identifyLocator(Identifier,driver,Locator);
+            element.clear();
+            element.sendKeys(InputData);
         }
-        else if (Browser.equalsIgnoreCase("safari")){
-            driver = new SafariDriver();
+        //reflect.getMethodsIdentifiers();
+        catch (Exception e){
+            System.out.println("unabele to clear/enter"+e.getMessage());
+        }
+
+    }
+
+    public static void enterText(String Identifier, String Locator, String InputData, String Action){
+        //reflect.getMethodsIdentifiers();
+        try {
+            element = reflect.identifyLocator(Identifier, driver, Locator);
+            element.sendKeys(InputData);
+        }
+        catch (Exception e){
+            System.out.println("unabele to enter text"+e.getMessage());
         }
     }
 
-    public static void clearandenter(String Identifier, String Locator, String InputData, String Action) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
-
+    public static void click(String Identifier, String Locator, String InputData, String Action) {
         //reflect.getMethodsIdentifiers();
-        element =reflect.identifyLocator(Identifier,driver,Locator);
-        element.clear();
-        element.sendKeys(InputData);
+       try {
+           element = reflect.identifyLocator(Identifier, driver, Locator);
+           element.click();
+           Thread.sleep(5000);
+       }
+         catch (Exception e){
+            System.out.println("unabele to click"+e.getMessage());
+        }
     }
 
-    public static void enterText(String Identifier, String Locator, String InputData, String Action)throws NoSuchMethodException, InvocationTargetException, IllegalAccessException{
-        //reflect.getMethodsIdentifiers();
-        element =reflect.identifyLocator(Identifier,driver,Locator);
-        element.sendKeys(InputData);
+    public static void waittime(String Identifier, String Locator, String InputData, String Action) {
+       try {
+           Thread.sleep(5000);
+       }
+       catch (Exception e){
+           System.out.println("Thread"+e.getMessage());
+       }
     }
 
-    public static void click(String Identifier, String Locator, String InputData, String Action) throws InterruptedException , NoSuchMethodException,InvocationTargetException ,IllegalAccessException{
+    public static void verifytext(String Identifier, String Locator, String InputData, String Action) {
         //reflect.getMethodsIdentifiers();
-        element =reflect.identifyLocator(Identifier,driver,Locator);
-        element.click();
-        Thread.sleep(5000);
-    }
-
-    public static void waittime(String Identifier, String Locator, String InputData, String Action) throws Exception{
-        Thread.sleep(5000);
-    }
-
-    public static void verifytext(String Identifier, String Locator, String InputData, String Action) throws InterruptedException , NoSuchMethodException,InvocationTargetException ,IllegalAccessException{
-        //reflect.getMethodsIdentifiers();
-        element =reflect.identifyLocator(Identifier,driver,Locator);
-        element.getText().equalsIgnoreCase(InputData);
+        try {
+         reflect.identifyLocator(Identifier, driver, Locator);
+            element.getText().equalsIgnoreCase(InputData);
+        }
+         catch (Exception e){
+            System.out.println("unabele to verify text"+e.getMessage());
+        }
     }
     public static void closeBrowser(String Identifier, String Locator, String InputData, String Action)
     {
-        driver.quit();
+        try {
+            driver.quit();
+        }
+        catch (Exception e){
+            System.out.println("unabele to close browser"+e.getMessage());
+        }
     }
 
 }

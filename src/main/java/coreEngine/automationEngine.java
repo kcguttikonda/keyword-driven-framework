@@ -23,24 +23,29 @@ public class automationEngine {
     @Test
     public static void Engine() throws IOException, InvalidFormatException, InterruptedException, InvocationTargetException, IllegalAccessException, NoSuchMethodException {
         //ConfigBuilder configbuilder = new ConfigBuilder();
-        configReader();
-        ExcelReader reader = new ExcelReader();
-        testcasesData = reader.TestCaseReader(TestCasesPath);
-        TestCaseRowIndexes testcases = new TestCaseRowIndexes();
-        testcases.buildTestCasesList(ConfigBuilder.TestCases, testcasesData);
+        try {
+            configReader();
+            ExcelReader reader = new ExcelReader();
+            testcasesData = reader.TestCaseReader(TestCasesPath);
+            TestCaseRowIndexes testcases = new TestCaseRowIndexes();
+            testcases.buildTestCasesList(ConfigBuilder.TestCases, testcasesData);
 
-        System.out.println(testcasesData.getLastRowNum());
-        for (String key:testCaseRows.keySet()) {
-            System.out.println(String.format("Executing TestCase with ID: %S",key));
-            keywordActions.createDriverInstance(ConfigBuilder.Browser, ConfigBuilder.BrowserDriverPath);
-            //System.out.println(key );
-            for(int i=0;i<testCaseRows.get(key).size();i++) {
-                System.out.println(testCaseRows.get(key).get(i));
-                 testdata.setVariables(testcasesData, Integer.parseInt(testCaseRows.get(key).get(i).toString()));
-                reflection.getMethods();
-                reflection.performAction(TestDataVariables.Identifier, TestDataVariables.InputLocator, TestDataVariables.InputData, TestDataVariables.Action);
+            System.out.println(testcasesData.getLastRowNum());
+            for (String key : testCaseRows.keySet()) {
+                System.out.println(String.format("Executing TestCase with ID: %S", key));
+                keywordActions.createDriverInstance(ConfigBuilder.Browser, ConfigBuilder.BrowserDriverPath);
+                //System.out.println(key );
+                for (int i = 0; i < testCaseRows.get(key).size(); i++) {
+                    System.out.println(testCaseRows.get(key).get(i));
+                    testdata.setVariables(testcasesData, Integer.parseInt(testCaseRows.get(key).get(i).toString()));
+                    reflection.getMethods();
+                    reflection.performAction(TestDataVariables.Identifier, TestDataVariables.InputLocator, TestDataVariables.InputData, TestDataVariables.Action);
+                }
+                System.out.println(String.format("Executing Completes for TestCase with ID: %S", key));
             }
-            System.out.println(String.format("Executing Completes for TestCase with ID: %S",key));
+        }
+        catch (Exception e){
+            System.out.println("test case fail"+e.getMessage());
         }
 
 
