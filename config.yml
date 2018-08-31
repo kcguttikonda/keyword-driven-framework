@@ -1,5 +1,5 @@
 TestCases: 1-100
 Browser: chrome
 OS: Windows
-TestCasesPath: C:\\Users\\kguttiko\\Documents\\GitHub\\keyword-driven-framework\\src\\main\\resources\\TestData\\TestCases.xlsx
-BrowserDriverPath: C:\\Users\\kguttiko\\Documents\\GitHub\\keyword-driven-framework\\Drivers\\chromedriver.exe
+TestCasesPath: C:\Flogo\Project\Keyword-Driven-Framework\src\main\resources\TestData\TestCases.xlsx
+BrowserDriverPath: C:\Flogo\Project\Keyword-Driven-Framework\Drivers\chromedriver.exe
