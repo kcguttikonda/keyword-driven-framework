@@ -3,19 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a113ec6f-f4f0-40f3-9157-2f5033f4bdf0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Actions/keywordActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Actions/keywordActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataMapper/ConfigBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataMapper/ConfigBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataMapper/ExcelReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataMapper/ExcelReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataMapper/Identifiers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataMapper/Identifiers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataMapper/TestCaseRowIndexes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataMapper/TestCaseRowIndexes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataMapper/TestDataVariables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataMapper/TestDataVariables.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coreEngine/KeywordActionsReflection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreEngine/KeywordActionsReflection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/TestData/TestCases.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/TestData/TestCases.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DataMapper/Identifiers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DataMapper/Identifiers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestData/TestCases.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestData/TestCases.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/coreEngine/automationEngine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/coreEngine/automationEngine.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -117,14 +104,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="2332" />
-          <entry key="txt" value="101" />
+          <entry key="txt" value="120" />
           <entry key="yml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="2332" />
-          <entry key="PLAIN_TEXT" value="101" />
+          <entry key="PLAIN_TEXT" value="120" />
           <entry key="YAML" value="5" />
         </counts>
       </usages-collector>
@@ -159,7 +146,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
+            <state relative-caret-position="449">
               <caret line="47" column="62" selection-start-line="47" selection-start-column="62" selection-end-line="47" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -343,7 +330,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535694865959" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535695573241" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -640,7 +627,35 @@
       <option name="project" value="LOCAL" />
       <updated>1535557276086</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="CleanedUpComments and started implementing multiple testcases">
+      <created>1535694744628</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1535694744628</updated>
+    </task>
+    <task id="LOCAL-00010" summary="CleanedUpComments and started implementing multiple testcases">
+      <created>1535694798016</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1535694798016</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Exception handling">
+      <created>1535694855843</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1535694855843</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Exception handling">
+      <created>1535694903689</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1535694903689</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -744,7 +759,8 @@
     <MESSAGE value="Added methods to reflection class" />
     <MESSAGE value="Added methods to Identifiers class" />
     <MESSAGE value="CleanedUpComments and started implementing multiple testcases" />
-    <option name="LAST_COMMIT_MESSAGE" value="CleanedUpComments and started implementing multiple testcases" />
+    <MESSAGE value="Exception handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exception handling" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/target/surefire-reports/2018-08-28T11-26-04_336-jvmRun1.dump">
@@ -837,7 +853,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
+        <state relative-caret-position="449">
           <caret line="47" column="62" selection-start-line="47" selection-start-column="62" selection-end-line="47" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
