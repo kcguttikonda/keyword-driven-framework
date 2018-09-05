@@ -144,7 +144,7 @@ public class keywordActions
     public static void createConnection(String Identifier, String Locator, String InputData, String Action)
     {
         try {
-            Map testmap = new LinkedHashMap()
+            Map testmap = new LinkedHashMap();
             String[] inputInputDataArray = InputData.split(",");
             String[] locatorsArray = Locator.split(",");
             for (String str : inputInputDataArray) {
