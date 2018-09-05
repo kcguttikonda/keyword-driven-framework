@@ -39,6 +39,7 @@ public class Identifiers {
 
         try {
             element = driver.findElement(By.linkText(locator));
+
         }
 
         catch (Exception e)
