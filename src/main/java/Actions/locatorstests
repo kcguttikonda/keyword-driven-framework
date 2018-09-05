@@ -1,0 +1,10 @@
+linktext	Connections	60000	clickAndWait	chrome
+xpath	//div[contains(@class,'wi-card-title-connector') and contains(text(),'Microsoft Azure ServiceBus Connector')]		click	chrome
+xpath	//p-dialog[@id='connectionListModal']/div/div[2]		click	chrome
+xpath	//input[@id='name']	AzureServiceBusConnection	enterText	chrome
+xpath	//input[@id='description']	AzureServiceBusConnection-Automation	enterText	chrome
+xpath	//input[@id='resourceURI']	ServicebusQA001	enterText	chrome
+xpath	//input[@id='authorizationRuleName']	AuthRule	enterText	chrome
+xpath	//input[@id='primarysecondaryKey']	eFxVfMG/8ssXCmm9BQFuEymrVnYpFvJWTxkr0nuXPQw=	enterText	chrome
+xpath	(//button[@type='button'])[8]	10000	clickAndWait	chrome
+             */
