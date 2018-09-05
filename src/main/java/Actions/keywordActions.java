@@ -168,14 +168,19 @@ public class keywordActions
 
 
                 if (currentElement.toLowerCase().contains("select")) {
-                    String currentElementXpath = "//select[@id=" + "'" + currentElement + "']";
                     String selectLocator = currentElement.split("_")[1];
+                    String currentElementXpath = "//select[@id=" + "'" + selectLocator + "']";
+
                     System.out.println(currentElement);
                     System.out.println(currentElementXpath);
                     System.out.println(currentElementValue);
-                    WebElement selectHandler = driver.findElement(By.id(selectLocator));
+                    WebElement selectHandler = driver.findElement(By.xpath(currentElementXpath));
+
+                    System.out.println("select by id done");
+                    System.out.println(selectHandler);
                     Select dropDown = new Select(selectHandler);
-                    dropDown.selectByVisibleText(testmap.get(locatorName).toString());
+                    System.out.println("select of select handler done");
+                    dropDown.selectByValue(testmap.get(locatorName).toString());
 
                 } else {
                     String currentElementXpath = "//input[@id=" + "'" + currentElement + "']";
