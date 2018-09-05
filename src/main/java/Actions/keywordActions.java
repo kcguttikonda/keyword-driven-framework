@@ -9,7 +9,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class keywordActions
 {
@@ -139,20 +144,48 @@ public class keywordActions
     public static void createConnection(String Identifier, String Locator, String InputData, String Action)
     {
         try {
+            Map testmap = new LinkedHashMap()
+            String[] inputInputDataArray = InputData.split(",");
+            String[] locatorsArray = Locator.split(",");
+            for (String str : inputInputDataArray) {
+                String[] eachString = str.split(":");
+                testmap.put(eachString[0], eachString[1]);
 
-            /*
-linktext	Connections	60000	clickAndWait	chrome
-xpath	//div[contains(@class,'wi-card-title-connector') and contains(text(),'Microsoft Azure ServiceBus Connector')]		click	chrome
-xpath	//p-dialog[@id='connectionListModal']/div/div[2]		click	chrome
-xpath	//input[@id='name']	AzureServiceBusConnection	enterText	chrome
-xpath	//input[@id='description']	AzureServiceBusConnection-Automation	enterText	chrome
-xpath	//input[@id='resourceURI']	ServicebusQA001	enterText	chrome
-xpath	//input[@id='authorizationRuleName']	AuthRule	enterText	chrome
-xpath	//input[@id='primarysecondaryKey']	eFxVfMG/8ssXCmm9BQFuEymrVnYpFvJWTxkr0nuXPQw=	enterText	chrome
-xpath	(//button[@type='button'])[8]	10000	clickAndWait	chrome
-             */
+            }
+            System.out.println(testmap);
+            driver.findElement(By.linkText("Connections")).click();
+            Thread.sleep(75000);
+
+            String connectorXpath = "//div[contains(@class,'wi-card-title-connector') and contains(text()," + testmap.get("Connector") + ")]";
+            System.out.println(connectorXpath);
+            driver.findElement(By.xpath(connectorXpath)).click();
+            driver.findElement(By.xpath("//p-dialog[@id='connectionListModal']/div/div[2]")).click();
+
+            testmap.remove("Connector");
+            for (Object locatorName : testmap.keySet()) {
+                String currentElement = locatorName.toString();
+                String currentElementValue = (testmap.get(locatorName).toString()).replace("'", "");
 
 
+                if (currentElement.toLowerCase().contains("select")) {
+                    String currentElementXpath = "//select[@id=" + "'" + currentElement + "']";
+                    String selectLocator = currentElement.split("_")[1];
+                    System.out.println(currentElement);
+                    System.out.println(currentElementXpath);
+                    System.out.println(currentElementValue);
+                    WebElement selectHandler = driver.findElement(By.id(selectLocator));
+                    Select dropDown = new Select(selectHandler);
+                    dropDown.selectByVisibleText(testmap.get(locatorName).toString());
+
+                } else {
+                    String currentElementXpath = "//input[@id=" + "'" + currentElement + "']";
+                    System.out.println(currentElement);
+                    System.out.println(currentElementXpath);
+                    System.out.println(currentElementValue);
+                    driver.findElement(By.xpath(currentElementXpath)).sendKeys(currentElementValue);
+                    driver.findElement(By.xpath("(//button[@type='button'])[8]")).click();
+                }
+            }
         }
         catch (Exception e){
             System.out.println("unabele to close browser"+e.getMessage());

@@ -2,24 +2,27 @@ package Actions;
 
 import org.testng.annotations.Test;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class testing {
 
-    public static void createConnection(String Identifier, String Locator, String InputData, String Action)
-    {
+    public static void createConnection(String Identifier, String Locator, String InputData, String Action) {
+        Map testmap = new HashMap();
         String[] inputInputDataArray = InputData.split(",");
         String[] locatorsArray = Locator.split(",");
-        for (String str:inputInputDataArray) {
-            System.out.println(str);
+        for (String str : inputInputDataArray) {
+            String[] eachString = str.split(":");
+            testmap.put(eachString[0],eachString[1]);
+
         }
 
-
-
+        System.out.println(testmap);
     }
 
 
-@Test
 public void test(){
-    createConnection("identifier","locator","Name:'',DEscription:'',AuthRule:'',NameSpace:'',Key:''","Action");
+    createConnection("identifier","locator","Connector:'Microsoft Azure ServiceBus Connector',name:'',description:'',authorizationRuleName:'',resourceURI:'',primarysecondaryKey:''","Action");
 }
 
 
