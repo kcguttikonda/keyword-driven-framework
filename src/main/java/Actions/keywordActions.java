@@ -185,7 +185,7 @@ public class keywordActions
 
             }
             String currentURL = driver.getCurrentUrl();
-            currentURL.replace("applications","wistudio/connectiondetails");
+            currentURL = currentURL.replace("applications","wistudio/connectiondetails");
             System.out.println(currentURL);
             driver.navigate().to(currentURL);
             Thread.sleep(20000);
