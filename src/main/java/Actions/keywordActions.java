@@ -4,19 +4,14 @@ import DataMapper.Identifiers;
 import coreEngine.KeywordActionsReflection;
 import jdk.internal.util.xml.impl.Input;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.KeyEvent;
 import java.security.Key;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -30,7 +25,6 @@ public class keywordActions
     public static WebElement element;
     static WebDriverWait wait;
     public static KeywordActionsReflection reflect = new KeywordActionsReflection();
-    public static Capture screen = new Capture();
 
     public static void openurl(String Identifier, String Locator, String InputData, String Action) {
 
@@ -38,7 +32,6 @@ public class keywordActions
             wait = new WebDriverWait(driver,30);
             driver.get(InputData);
             Thread.sleep(5000);
-            screen.getScreenShotsofTest(driver);
         }
         catch (Exception e){
             System.out.println("unable open url"+e.getMessage());
@@ -53,27 +46,15 @@ public class keywordActions
             if (Browser.equalsIgnoreCase("firefox")) {
                 driver = new FirefoxDriver();
                 driver.manage().window().maximize();
-
             } else if (Browser.equalsIgnoreCase("chrome")) {
                 driver = new ChromeDriver();
                 driver.manage().window().maximize();
                 System.out.println(driver);
-                /*Actions act = new Actions(driver);
-                act.keyDown(Keys.CONTROL).sendKeys("-").keyUp(Keys.CONTROL).perform();
-                act.keyDown(Keys.CONTROL).sendKeys("-").keyUp(Keys.CONTROL).perform();*/
-
-                /*Thread.sleep(2000);
-                Robot rt = new Robot();
-                rt.keyPress(KeyEvent.VK_CONTROL);
-                rt.keyPress(KeyEvent.VK_ADD);
-                rt.keyRelease(KeyEvent.VK_ADD);
-                rt.keyRelease(KeyEvent.VK_CONTROL);*/
             } else if (Browser.equalsIgnoreCase("safari")) {
                 driver = new SafariDriver();
                 driver.manage().window().maximize();
 
             }
-            screen.getScreenShotsofTest(driver);
         } catch (Exception e) {
             System.out.println("unable to invoke browser" + e.getMessage());
 
@@ -85,7 +66,6 @@ public class keywordActions
             element =reflect.identifyLocator(Identifier,driver,Locator);
             element.clear();
             element.sendKeys(InputData);
-            screen.getScreenShotsofTest(driver);
         }
         //reflect.getMethodsIdentifiers();
         catch (Exception e){
@@ -100,7 +80,6 @@ public class keywordActions
             element = reflect.identifyLocator(Identifier, driver, Locator);
             element.click();
             element.sendKeys(InputData);
-            screen.getScreenShotsofTest(driver);
         }
         catch (Exception e){
             System.out.println("unabele to enter text"+e.getMessage());
@@ -113,7 +92,6 @@ public class keywordActions
             element = reflect.identifyLocator(Identifier, driver, Locator);
             element.click();
             Thread.sleep(5000);
-            screen.getScreenShotsofTest(driver);
         }
         catch (Exception e){
             System.out.println("unabele to click"+e.getMessage());
@@ -126,7 +104,6 @@ public class keywordActions
             System.out.println("im in click and wait");
             element = reflect.identifyLocator(Identifier, driver, Locator);
             element.click();
-            screen.getScreenShotsofTest(driver);
             System.out.println("im in click and wait-after click");
             int waittime = Integer.valueOf(InputData);
             Thread.sleep(waittime);
@@ -154,7 +131,6 @@ public class keywordActions
         try {
             reflect.identifyLocator(Identifier, driver, Locator);
             element.getText().equalsIgnoreCase(InputData);
-            screen.getScreenShotsofTest(driver);
         }
         catch (Exception e){
             System.out.println("unabele to verify text"+e.getMessage());
@@ -186,9 +162,7 @@ public class keywordActions
 
             String connectorXpath = "//div[contains(@class,'wi-card-title-connector') and contains(text()," + testmap.get("Connector") + ")]";
             driver.findElement(By.xpath(connectorXpath)).click();
-            screen.getScreenShotsofTest(driver);
             driver.findElement(By.xpath("//p-dialog[@id='connectionListModal']/div/div[2]")).click();
-            screen.getScreenShotsofTest(driver);
             testmap.remove("Connector");
 
             Set<String> keys = testmap.keySet();
@@ -209,9 +183,7 @@ public class keywordActions
             }
 
             String loginButton = "(//button[@type='button'])[8]";
-            screen.getScreenShotsofTest(driver);
             driver.findElement(By.xpath(loginButton)).click();
-            screen.getScreenShotsofTest(driver);
             Thread.sleep(10000);
         }
         catch (Exception e){
