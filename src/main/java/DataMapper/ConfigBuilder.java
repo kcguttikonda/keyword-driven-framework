@@ -20,6 +20,7 @@ public class ConfigBuilder {
     public static String TestCasesPath;
     public static String BrowserDriverPath;
     public static int numOfTestCases;
+    public static String screebshotpath;
 
 
     public static void configReader() {
@@ -55,6 +56,7 @@ public class ConfigBuilder {
             OS = configMap.get("OS").toString();
             TestCasesPath=configMap.get("TestCasesPath").toString();
             BrowserDriverPath=configMap.get("BrowserDriverPath").toString();
+            screebshotpath =configMap.get("screenshotspath").toString();
         }
         catch (Exception e){
             System.out.println("Unable read config"+e.getMessage());
