@@ -53,6 +53,9 @@ public class keywordActions
             if (Browser.equalsIgnoreCase("firefox")) {
                 driver = new FirefoxDriver();
                 driver.manage().window().maximize();
+                WebElement html = driver.findElement(By.tagName("html"));
+                html.sendKeys(Keys.chord(Keys.CONTROL, Keys.SUBTRACT));
+                html.sendKeys(Keys.chord(Keys.CONTROL, Keys.SUBTRACT));
 
             } else if (Browser.equalsIgnoreCase("chrome")) {
                 driver = new ChromeDriver();
@@ -181,14 +184,22 @@ public class keywordActions
                 testmap.put(eachString[0], eachString[1]);
 
             }
-            driver.findElement(By.linkText("Connections")).click();
-            Thread.sleep(40000);
-
+            String currentURL = driver.getCurrentUrl();
+            currentURL.replace("applications","wistudio/connectiondetails");
+            System.out.println(currentURL);
+            driver.navigate().to(currentURL);
+            Thread.sleep(20000);
             String connectorXpath = "//div[contains(@class,'wi-card-title-connector') and contains(text()," + testmap.get("Connector") + ")]";
             driver.findElement(By.xpath(connectorXpath)).click();
             screen.getScreenShotsofTest(driver);
-            driver.findElement(By.xpath("//p-dialog[@id='connectionListModal']/div/div[2]")).click();
+
+
+
+            //driver.findElement(By.xpath("//p-dialog[@id='connectionListModal']/div/div[2]")).click();
             screen.getScreenShotsofTest(driver);
+            WebElement html = driver.findElement(By.tagName("html"));
+            html.sendKeys(Keys.chord(Keys.CONTROL, Keys.SUBTRACT));
+            html.sendKeys(Keys.chord(Keys.CONTROL, Keys.SUBTRACT));
             testmap.remove("Connector");
 
             Set<String> keys = testmap.keySet();

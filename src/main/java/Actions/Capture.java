@@ -18,7 +18,7 @@ public class Capture {
             Random rand = new Random();
 
 
-            String path = ConfigBuilder.screebshotpath+"/"+"Screenshot"+rand.nextInt(1000);
+            String path = ConfigBuilder.screebshotpath+"/"+"Screenshot"+rand.nextInt(1000)+".jpg";
             screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(screenshotFile, new File(path));
 
