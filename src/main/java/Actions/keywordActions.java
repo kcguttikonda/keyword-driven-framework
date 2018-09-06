@@ -45,11 +45,14 @@ public class keywordActions
         try {
             if (Browser.equalsIgnoreCase("firefox")) {
                 driver = new FirefoxDriver();
+                driver.manage().window().maximize();
             } else if (Browser.equalsIgnoreCase("chrome")) {
                 driver = new ChromeDriver();
+                driver.manage().window().maximize();
                 System.out.println(driver);
             } else if (Browser.equalsIgnoreCase("safari")) {
                 driver = new SafariDriver();
+                driver.manage().window().maximize();
 
             }
         } catch (Exception e) {
@@ -148,54 +151,40 @@ public class keywordActions
         try {
             Map testmap = new LinkedHashMap();
             String[] inputInputDataArray = InputData.split(",");
-            String[] locatorsArray = Locator.split(",");
+
             for (String str : inputInputDataArray) {
-                //String[] eachString = str.split(":");
                 String[] eachString =str.split(":",2);
                 testmap.put(eachString[0], eachString[1]);
 
             }
-            //System.out.println(testmap);
             driver.findElement(By.linkText("Connections")).click();
             Thread.sleep(40000);
 
             String connectorXpath = "//div[contains(@class,'wi-card-title-connector') and contains(text()," + testmap.get("Connector") + ")]";
-            System.out.println(connectorXpath);
             driver.findElement(By.xpath(connectorXpath)).click();
             driver.findElement(By.xpath("//p-dialog[@id='connectionListModal']/div/div[2]")).click();
-
             testmap.remove("Connector");
-            System.out.println(testmap);
-            System.out.println(testmap.size());
 
             Set<String> keys = testmap.keySet();
-            System.out.println(keys);
             for (String locatorName : keys) {
                 String currentElement = locatorName.toString();
                 String currentElementValue = (testmap.get(locatorName).toString()).replace("'", "");
-                System.out.println(currentElement);
-                System.out.println(currentElementValue);
-
                 if (currentElement.toLowerCase().contains("select")) {
                     String selectLocator = currentElement.split("_")[1];
                     String currentElementXpath = "//select[@id=" + "'" + selectLocator + "']";
-
-                    //System.out.println(currentElement);
-                    //System.out.println(currentElementXpath);
-                    //System.out.println(currentElementValue);
                     WebElement selectHandler = driver.findElement(By.xpath(currentElementXpath));
                     Select dropDown = new Select(selectHandler);
                     dropDown.selectByValue(currentElementValue);
 
                 } else {
                     String currentElementXpath = "//input[@id=" + "'" + currentElement + "']";
-                    //System.out.println(currentElement);
-                    //System.out.println(currentElementXpath);
-                    //System.out.println(currentElementValue);
                     driver.findElement(By.xpath(currentElementXpath)).sendKeys(currentElementValue);
                 }
             }
-            driver.findElement(By.xpath("(//button[@type='button'])[8]")).click();
+
+            String loginButton = "(//button[@type='button'])[8]";
+            driver.findElement(By.xpath(loginButton)).click();
+            Thread.sleep(10000);
         }
         catch (Exception e){
             System.out.println("unable to close browser: "+e.getMessage());

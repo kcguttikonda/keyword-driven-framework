@@ -4,8 +4,8 @@
     <list default="true" id="a113ec6f-f4f0-40f3-9157-2f5033f4bdf0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Actions/keywordActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Actions/keywordActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Actions/testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Actions/testing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/TestData/TestCases.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/TestData/TestCases.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Actions/keywordActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Actions/keywordActions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestData/TestCases.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestData/TestCases.xlsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -59,7 +59,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="9429" />
+          <entry key="java" value="9626" />
           <entry key="txt" value="773" />
           <entry key="xml" value="17" />
           <entry key="yml" value="37" />
@@ -67,7 +67,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="9429" />
+          <entry key="JAVA" value="9626" />
           <entry key="PLAIN_TEXT" value="773" />
           <entry key="XML" value="17" />
           <entry key="YAML" value="37" />
@@ -129,8 +129,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Actions/keywordActions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="197" column="82" selection-start-line="197" selection-start-column="82" selection-end-line="197" selection-end-column="82" />
+            <state relative-caret-position="-204">
+              <caret line="171" selection-start-line="171" selection-end-line="171" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -305,7 +305,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536217493644" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536218760908" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -585,22 +585,17 @@
       <option name="project" value="LOCAL" />
       <updated>1536170710904</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="-Implemented createConnection method in keywordsActions class which enables user to create connection with just one test step">
+      <created>1536217569053</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1536217569053</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="automationEngine - 2018.09.06 at 11h 38m 13s.xml">
-      <configuration name="automationEngine" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="automationEngine - 2018.09.06 at 11h 45m 27s.xml">
-      <configuration name="automationEngine" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="automationEngine - 2018.09.06 at 11h 51m 54s.xml">
-      <configuration name="automationEngine" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="automationEngine - 2018.09.06 at 11h 57m 15s.xml">
-      <configuration name="automationEngine" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="automationEngine - 2018.09.06 at 12h 00m 29s.xml">
       <configuration name="automationEngine" configurationId="TestNG" />
     </history-entry>
@@ -617,6 +612,18 @@
       <configuration name="automationEngine" configurationId="TestNG" />
     </history-entry>
     <history-entry file="automationEngine - 2018.09.06 at 12h 29m 45s.xml">
+      <configuration name="automationEngine" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="automationEngine - 2018.09.06 at 12h 38m 39s.xml">
+      <configuration name="automationEngine" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="automationEngine - 2018.09.06 at 12h 45m 18s.xml">
+      <configuration name="automationEngine" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="automationEngine - 2018.09.06 at 12h 49m 12s.xml">
+      <configuration name="automationEngine" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="automationEngine - 2018.09.06 at 12h 53m 01s.xml">
       <configuration name="automationEngine" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -798,13 +805,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Actions/locatorstests">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="37" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Actions/testing.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -825,10 +825,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Actions/locatorstests">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Actions/keywordActions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="197" column="82" selection-start-line="197" selection-start-column="82" selection-end-line="197" selection-end-column="82" />
+        <state relative-caret-position="-204">
+          <caret line="171" selection-start-line="171" selection-end-line="171" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
