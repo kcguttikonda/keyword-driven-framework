@@ -12,9 +12,11 @@ import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.security.Key;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class keywordActions
 {
@@ -148,13 +150,14 @@ public class keywordActions
             String[] inputInputDataArray = InputData.split(",");
             String[] locatorsArray = Locator.split(",");
             for (String str : inputInputDataArray) {
-                String[] eachString = str.split(":");
+                //String[] eachString = str.split(":");
+                String[] eachString =str.split(":",2);
                 testmap.put(eachString[0], eachString[1]);
 
             }
-            System.out.println(testmap);
+            //System.out.println(testmap);
             driver.findElement(By.linkText("Connections")).click();
-            Thread.sleep(75000);
+            Thread.sleep(40000);
 
             String connectorXpath = "//div[contains(@class,'wi-card-title-connector') and contains(text()," + testmap.get("Connector") + ")]";
             System.out.println(connectorXpath);
@@ -162,38 +165,40 @@ public class keywordActions
             driver.findElement(By.xpath("//p-dialog[@id='connectionListModal']/div/div[2]")).click();
 
             testmap.remove("Connector");
-            for (Object locatorName : testmap.keySet()) {
+            System.out.println(testmap);
+            System.out.println(testmap.size());
+
+            Set<String> keys = testmap.keySet();
+            System.out.println(keys);
+            for (String locatorName : keys) {
                 String currentElement = locatorName.toString();
                 String currentElementValue = (testmap.get(locatorName).toString()).replace("'", "");
-
+                System.out.println(currentElement);
+                System.out.println(currentElementValue);
 
                 if (currentElement.toLowerCase().contains("select")) {
                     String selectLocator = currentElement.split("_")[1];
                     String currentElementXpath = "//select[@id=" + "'" + selectLocator + "']";
 
-                    System.out.println(currentElement);
-                    System.out.println(currentElementXpath);
-                    System.out.println(currentElementValue);
+                    //System.out.println(currentElement);
+                    //System.out.println(currentElementXpath);
+                    //System.out.println(currentElementValue);
                     WebElement selectHandler = driver.findElement(By.xpath(currentElementXpath));
-
-                    System.out.println("select by id done");
-                    System.out.println(selectHandler);
                     Select dropDown = new Select(selectHandler);
-                    System.out.println("select of select handler done");
-                    dropDown.selectByValue(testmap.get(locatorName).toString());
+                    dropDown.selectByValue(currentElementValue);
 
                 } else {
                     String currentElementXpath = "//input[@id=" + "'" + currentElement + "']";
-                    System.out.println(currentElement);
-                    System.out.println(currentElementXpath);
-                    System.out.println(currentElementValue);
+                    //System.out.println(currentElement);
+                    //System.out.println(currentElementXpath);
+                    //System.out.println(currentElementValue);
                     driver.findElement(By.xpath(currentElementXpath)).sendKeys(currentElementValue);
-                    driver.findElement(By.xpath("(//button[@type='button'])[8]")).click();
                 }
             }
+            driver.findElement(By.xpath("(//button[@type='button'])[8]")).click();
         }
         catch (Exception e){
-            System.out.println("unabele to close browser"+e.getMessage());
+            System.out.println("unable to close browser: "+e.getMessage());
         }
     }
 

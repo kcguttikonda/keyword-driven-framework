@@ -16,10 +16,10 @@ public class testing {
             testmap.put(eachString[0],eachString[1]);
 
         }
+        String selectValue = "\""+testmap.get("Connector").toString().replace("'","")+"\"";
 
-        System.out.println(testmap);
+        System.out.println(selectValue);
     }
-
 
 public void test(){
     createConnection("identifier","locator","Connector:'Microsoft Azure ServiceBus Connector',name:'',description:'',authorizationRuleName:'',resourceURI:'',primarysecondaryKey:''","Action");
