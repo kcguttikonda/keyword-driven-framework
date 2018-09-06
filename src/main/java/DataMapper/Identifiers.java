@@ -27,6 +27,8 @@ public class Identifiers {
             element = driver.findElement(By.xpath(locator));
 
 
+
+
         }
         catch (Exception e){
             System.out.println("Invoke browser "+e.getMessage());
