@@ -6,61 +6,58 @@ import DataMapper.TestDataVariables;
 import DataMapper.ExcelReader;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.xmlbeans.impl.xb.ltgfmt.TestCase;
 import org.testng.annotations.*;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
-
 import static DataMapper.ConfigBuilder.TestCasesPath;
-import static DataMapper.ConfigBuilder.configReader;
-import static DataMapper.TestCaseRowIndexes.testCaseRows;
 
 
 public class automationEngine {
     static Sheet testcasesData;
     static KeywordActionsReflection reflection = new KeywordActionsReflection();
     static TestDataVariables testdata = new TestDataVariables();
+    static ExcelReader reader;
 
-    @Test
-    public static void Engine() throws IOException, InvalidFormatException, InterruptedException, InvocationTargetException, IllegalAccessException, NoSuchMethodException {
-        //ConfigBuilder configbuilder = new ConfigBuilder();
+    @BeforeMethod
+    public void Setup(){
+        //ConfigBuilder.configReader();
+        reader = new ExcelReader();
+        testcasesData = reader.TestCaseReader(TestCasesPath);
+        TestCaseRowIndexes testcases = new TestCaseRowIndexes();
+        testcases.buildTestCasesList(ConfigBuilder.TestCases, testcasesData);
+        System.out.println(testcasesData.getLastRowNum());
+        System.out.println(TestCaseRowIndexes.testCaseRows);
+        keywordActions.createDriverInstance(ConfigBuilder.Browser, ConfigBuilder.BrowserDriverPath);
+    }
+
+    @Test(dataProvider = "testCaseIds", dataProviderClass = ConfigBuilder.class)
+    public void Engine(String testCaseId) throws IOException, InvalidFormatException, InterruptedException, InvocationTargetException, IllegalAccessException, NoSuchMethodException {
+       System.out.println("Im in the @Test Method" +testCaseId);
         try {
-            configReader();
-            ExcelReader reader = new ExcelReader();
-            testcasesData = reader.TestCaseReader(TestCasesPath);
-            TestCaseRowIndexes testcases = new TestCaseRowIndexes();
-            testcases.buildTestCasesList(ConfigBuilder.TestCases, testcasesData);
-
-            System.out.println(testcasesData.getLastRowNum());
-            for (String key : testCaseRows.keySet()) {
-                System.out.println(String.format("Executing TestCase with ID: %S", key));
-                keywordActions.createDriverInstance(ConfigBuilder.Browser, ConfigBuilder.BrowserDriverPath);
+            System.out.println("Printing parameters form dataprovifrt" +testCaseId);
+            System.out.println(String.format("Executing TestCase with ID: %S", testCaseId));
+            //keywordActions.createDriverInstance(ConfigBuilder.Browser, ConfigBuilder.BrowserDriverPath);
                 //System.out.println(key );
-                for (int i = 0; i < testCaseRows.get(key).size(); i++) {
-                    System.out.println(testCaseRows.get(key).get(i));
-                    testdata.setVariables(testcasesData, Integer.parseInt(testCaseRows.get(key).get(i).toString()));
+                for (int i = 0; i < TestCaseRowIndexes.testCaseRows.get(testCaseId).size(); i++) {
+                    System.out.println(TestCaseRowIndexes.testCaseRows.get(testCaseId).get(i));
+                    testdata.setVariables(testcasesData, Integer.parseInt(TestCaseRowIndexes.testCaseRows.get(testCaseId).get(i).toString()));
                     reflection.getMethods();
                     reflection.performAction(TestDataVariables.Identifier, TestDataVariables.InputLocator, TestDataVariables.InputData, TestDataVariables.Action);
                 }
-                System.out.println(String.format("Executing Completes for TestCase with ID: %S", key));
-            }
+                System.out.println(String.format("Executing Completes for TestCase with ID: %S", testCaseId));
+
         }
         catch (Exception e){
             System.out.println("test case fail"+e.getMessage());
         }
 
+}
 
-/*
-        for (int id = 0; id < ConfigBuilder.numOfTestCases; id++) {
+    @AfterMethod
+    public void TearDown(){
+        keywordActions.driver.quit();
 
-            testcasesData.getRow(id).getRowNum();
-
-            for (int i = 1; i <= testcasesData.getLastRowNum(); i++) {
-                if (testcasesData.getRow(i) == null) {
-                    continue;
-                }
-                testdata.setVariables(testcasesData, i);
-                reflection.getMethods();
-                reflection.performAction(TestDataVariables.Identifier, TestDataVariables.InputLocator, TestDataVariables.InputData, TestDataVariables.Action);
-*/
     }
+
 }

@@ -13,7 +13,6 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
@@ -45,9 +44,9 @@ public class keywordActions
         }
     }
 
-    public static void createDriverInstance(String Browser,String Driverpath) {
-        System.setProperty("webdriver.chrome.driver", Driverpath);
-        System.setProperty("webdriver.firefox.driver", Driverpath);
+    public static void createDriverInstance(String Browser,String BrowserDriverPath) {
+        System.setProperty("webdriver.chrome.driver", BrowserDriverPath);
+        System.setProperty("webdriver.firefox.driver", BrowserDriverPath);
         //System.setProperty("webdriver.safari.driver","C:\\Users\\kguttiko\\Documents\\GitHub\\keyword-driven-framework\\Drivers\\chromedriver.exe");
         try {
             if (Browser.equalsIgnoreCase("firefox")) {

@@ -1,13 +1,13 @@
 package DataMapper;
 
-import org.apache.xmlbeans.impl.xb.ltgfmt.TestCase;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.yaml.snakeyaml.Yaml;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -20,10 +20,10 @@ public class ConfigBuilder {
     public static String TestCasesPath;
     public static String BrowserDriverPath;
     public static int numOfTestCases;
-    public static String screebshotpath;
+    public static String screenshotpath;
 
-
-    public static void configReader() {
+    @DataProvider(name = "testCaseIds")
+    public static Object[] configReader() {
         try{
             Yaml yaml = new Yaml();
 
@@ -41,7 +41,7 @@ public class ConfigBuilder {
                 System.out.println(testcaseRange[0]);
                 System.out.println(testcaseRange[1]);
                 for(int i=Integer.parseInt(testcaseRange[0]);i<=Integer.parseInt(testcaseRange[1]);i++){
-                    TestCases.add(i);
+                    TestCases.add(String.valueOf(i));
                 }
             }
             else{
@@ -50,18 +50,23 @@ public class ConfigBuilder {
                     TestCases.add(id);
                 }
             }
+            System.out.println(TestCases);
 
             numOfTestCases = TestCases.size();
             Browser = configMap.get("Browser").toString();
             OS = configMap.get("OS").toString();
             TestCasesPath=configMap.get("TestCasesPath").toString();
             BrowserDriverPath=configMap.get("BrowserDriverPath").toString();
-            screebshotpath =configMap.get("screenshotspath").toString();
+            screenshotpath =configMap.get("screenshotspath").toString();
         }
         catch (Exception e){
             System.out.println("Unable read config"+e.getMessage());
         }
 
+        Object[] testDataParameters = TestCases.toArray();
+        System.out.println(testDataParameters);
+        System.out.println(TestCases);
+        return testDataParameters;
 
     }
 }
