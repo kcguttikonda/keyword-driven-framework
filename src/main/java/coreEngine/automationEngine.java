@@ -37,8 +37,6 @@ public class automationEngine {
         try {
             System.out.println("Printing parameters form dataprovifrt" +testCaseId);
             System.out.println(String.format("Executing TestCase with ID: %S", testCaseId));
-            //keywordActions.createDriverInstance(ConfigBuilder.Browser, ConfigBuilder.BrowserDriverPath);
-                //System.out.println(key );
                 for (int i = 0; i < TestCaseRowIndexes.testCaseRows.get(testCaseId).size(); i++) {
                     System.out.println(TestCaseRowIndexes.testCaseRows.get(testCaseId).get(i));
                     testdata.setVariables(testcasesData, Integer.parseInt(TestCaseRowIndexes.testCaseRows.get(testCaseId).get(i).toString()));
@@ -51,9 +49,7 @@ public class automationEngine {
         catch (Exception e){
             System.out.println("test case fail"+e.getMessage());
         }
-
 }
-
     @AfterMethod
     public void TearDown(){
         keywordActions.driver.quit();

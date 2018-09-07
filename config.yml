@@ -1,4 +1,4 @@
-TestCases: 1-100
+TestCases: 1,2
 Browser: chrome
 OS: Windows
 TestCasesPath: C:\\Users\\kguttiko\\Documents\\GitHub\\keyword-driven-framework\\src\\main\\resources\\TestData\\TestCases.xlsx
