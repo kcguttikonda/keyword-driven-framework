@@ -1,6 +1,10 @@
 package DataMapper;
 
+import org.apache.poi.hssf.record.BlankRecord;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.testng.annotations.Test;
 import java.io.IOException;
@@ -20,7 +24,8 @@ public class TestCaseRowIndexes {
             while(i<TestCases.size()) {
                 List rowValueList = new ArrayList();
                 for(int j=1;j<=ExcelReader.sheet.getLastRowNum();j++) {
-                    if(testcasesData.getRow(j) == null){
+                    //if(testcasesData.getRow(j) == null){
+                      if(testcasesData.getRow(j).getCell(0).getCellTypeEnum() == CellType.BLANK){
                         //System.out.println("im in if");
                         continue;
                     }

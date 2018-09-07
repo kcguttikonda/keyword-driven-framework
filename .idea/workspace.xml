@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a113ec6f-f4f0-40f3-9157-2f5033f4bdf0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/coreEngine/automationEngine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/coreEngine/automationEngine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Actions/keywordActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Actions/keywordActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DataMapper/TestCaseRowIndexes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataMapper/TestCaseRowIndexes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/TestData/TestCases.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/TestData/TestCases.xlsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -58,7 +61,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="11038" />
+          <entry key="java" value="11397" />
           <entry key="txt" value="843" />
           <entry key="xml" value="67" />
           <entry key="yml" value="73" />
@@ -66,7 +69,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="11038" />
+          <entry key="JAVA" value="11397" />
           <entry key="PLAIN_TEXT" value="843" />
           <entry key="XML" value="67" />
           <entry key="YAML" value="73" />
@@ -77,7 +80,7 @@
           <entry key="class" value="3" />
           <entry key="dump" value="2" />
           <entry key="html" value="1" />
-          <entry key="java" value="28" />
+          <entry key="java" value="31" />
           <entry key="locatorstests" value="2" />
           <entry key="xml" value="6" />
           <entry key="yml" value="3" />
@@ -87,7 +90,7 @@
         <counts>
           <entry key="CLASS" value="3" />
           <entry key="HTML" value="1" />
-          <entry key="JAVA" value="28" />
+          <entry key="JAVA" value="31" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="XML" value="6" />
           <entry key="YAML" value="3" />
@@ -129,77 +132,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Actions/keywordActions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="141">
+              <caret line="221" column="51" selection-start-line="221" selection-start-column="51" selection-end-line="221" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="28" column="9" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/testng.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DataMapper/ExcelReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51">
-              <caret line="28" column="50" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DataMapper/Identifiers.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Actions/testing.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DataMapper/ConfigBuilder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-372">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="-304">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -210,8 +159,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/DataMapper/TestCaseRowIndexes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+            <state relative-caret-position="-287">
+              <caret line="25" column="71" selection-start-line="25" selection-start-column="71" selection-end-line="25" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#561#575#0" expanded="true" />
@@ -221,13 +170,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/coreEngine/KeywordActionsReflection.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/DataMapper/ConfigBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+            <state relative-caret-position="-613">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testng.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -253,14 +211,14 @@
         <option value="$PROJECT_DIR$/src/main/java/DataMapper/Identifiers.java" />
         <option value="$PROJECT_DIR$/src/main/java/Actions/locatorstests" />
         <option value="$PROJECT_DIR$/src/main/java/Actions/testing.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Actions/keywordActions.java" />
         <option value="$PROJECT_DIR$/src/main/java/Actions/Capture.java" />
         <option value="$PROJECT_DIR$/src/main/java/DataMapper/ConfigBuilder.java" />
         <option value="$PROJECT_DIR$/config.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/DataMapper/TestCaseRowIndexes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/testng.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DataMapper/TestCaseRowIndexes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Actions/keywordActions.java" />
       </list>
     </option>
   </component>
@@ -294,7 +252,42 @@
             <path>
               <item name="keyword-driven-framework" type="b2602c69:ProjectViewProjectNode" />
               <item name="keyword-driven-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="keyword-driven-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="keyword-driven-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="keyword-driven-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="keyword-driven-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="keyword-driven-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="keyword-driven-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Actions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="keyword-driven-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="keyword-driven-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="DataMapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="keyword-driven-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="keyword-driven-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -305,11 +298,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536341224657" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536347872452" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RunDashboard">
@@ -324,7 +317,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.automationEngine (1)">
+  <component name="RunManager" selected="TestNG.automationEngine.Engine">
     <configuration name="C:/Users/kguttiko/Documents/GitHub/keyword-driven-framework/testng.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Keyword-Driven-Framework" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -367,7 +360,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="automationEngine (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="automationEngine" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Keyword-Driven-Framework" />
       <extension name="coverage">
         <pattern>
@@ -375,10 +368,24 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="coreEngine" />
       <option name="MAIN_CLASS_NAME" value="coreEngine.automationEngine" />
+      <option name="GROUP_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
-      <listeners />
+      <listeners>
+        <listener class="org.testng.reporters.XMLReporter" />
+        <listener class="org.testng.reporters.TestHTMLReporter" />
+        <listener class="org.testng.reporters.TestHTMLReporter" />
+        <listener class="org.uncommons.reportng.JUnitXMLReporter" />
+        <listener class="org.uncommons.reportng.HTMLReporter" />
+      </listeners>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -406,14 +413,14 @@
       <item itemvalue="TestNG.ConfigBuilder" />
       <item itemvalue="TestNG.C:/Users/kguttiko/Documents/GitHub/keyword-driven-framework/testng.xml" />
       <item itemvalue="TestNG.TestCaseRowIndexes" />
-      <item itemvalue="TestNG.automationEngine (1)" />
+      <item itemvalue="TestNG.automationEngine" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.automationEngine (1)" />
+        <item itemvalue="TestNG.automationEngine.Engine" />
+        <item itemvalue="TestNG.automationEngine" />
         <item itemvalue="TestNG.TestCaseRowIndexes" />
         <item itemvalue="TestNG.C:/Users/kguttiko/Documents/GitHub/keyword-driven-framework/testng.xml" />
-        <item itemvalue="TestNG.automationEngine.Engine" />
         <item itemvalue="TestNG.ConfigBuilder" />
       </list>
     </recent_temporary>
@@ -639,46 +646,53 @@
       <option name="project" value="LOCAL" />
       <updated>1536340777461</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="-Implemented ReportNG Reporting">
+      <created>1536341338033</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1536341338033</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_kguttiko_Documents_GitHub_keyword-driven-framework_testng_xml - 2018.09.07 at 17h 28m 41s.xml">
-      <configuration name="C:/Users/kguttiko/Documents/GitHub/keyword-driven-framework/testng.xml" configurationId="TestNG" />
+    <history-entry file="automationEngine_Engine - 2018.09.08 at 00h 00m 58s.xml">
+      <configuration name="automationEngine.Engine" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestCaseRowIndexes - 2018.09.07 at 17h 30m 06s.xml">
-      <configuration name="TestCaseRowIndexes" configurationId="TestNG" />
+    <history-entry file="automationEngine_Engine - 2018.09.08 at 00h 06m 54s.xml">
+      <configuration name="automationEngine.Engine" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="automationEngine_(1) - 2018.09.07 at 17h 33m 54s.xml">
-      <configuration name="automationEngine (1)" configurationId="TestNG" />
+    <history-entry file="automationEngine_Engine - 2018.09.08 at 00h 10m 57s.xml">
+      <configuration name="automationEngine.Engine" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="automationEngine_(1) - 2018.09.07 at 17h 38m 23s.xml">
-      <configuration name="automationEngine (1)" configurationId="TestNG" />
+    <history-entry file="automationEngine_Engine - 2018.09.08 at 00h 11m 43s.xml">
+      <configuration name="automationEngine.Engine" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="automationEngine_(1) - 2018.09.07 at 17h 39m 28s.xml">
-      <configuration name="automationEngine (1)" configurationId="TestNG" />
+    <history-entry file="automationEngine_Engine - 2018.09.08 at 00h 13m 09s.xml">
+      <configuration name="automationEngine.Engine" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="automationEngine_(1) - 2018.09.07 at 17h 40m 29s.xml">
-      <configuration name="automationEngine (1)" configurationId="TestNG" />
+    <history-entry file="automationEngine_Engine - 2018.09.08 at 00h 14m 20s.xml">
+      <configuration name="automationEngine.Engine" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="automationEngine_(1) - 2018.09.07 at 17h 44m 02s.xml">
-      <configuration name="automationEngine (1)" configurationId="TestNG" />
+    <history-entry file="automationEngine_Engine - 2018.09.08 at 00h 20m 27s.xml">
+      <configuration name="automationEngine.Engine" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="automationEngine_(1) - 2018.09.07 at 17h 49m 01s.xml">
-      <configuration name="automationEngine (1)" configurationId="TestNG" />
+    <history-entry file="automationEngine_Engine - 2018.09.08 at 00h 27m 01s.xml">
+      <configuration name="automationEngine.Engine" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="automationEngine_(1) - 2018.09.07 at 22h 19m 43s.xml">
-      <configuration name="automationEngine (1)" configurationId="TestNG" />
+    <history-entry file="automationEngine_Engine - 2018.09.08 at 00h 38m 55s.xml">
+      <configuration name="automationEngine.Engine" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="automationEngine_(1) - 2018.09.07 at 22h 53m 22s.xml">
-      <configuration name="automationEngine (1)" configurationId="TestNG" />
+    <history-entry file="automationEngine_Engine - 2018.09.08 at 00h 48m 04s.xml">
+      <configuration name="automationEngine.Engine" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26639676" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26639676" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -687,7 +701,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49916667" visible="true" weight="0.50087565" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49916667" visible="true" weight="0.50087565" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.55516636" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -774,16 +788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Actions/keywordActions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="48" column="72" selection-start-line="48" selection-start-column="72" selection-end-line="48" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/DataMapper/TestDataVariables.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-102">
@@ -857,13 +861,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataMapper/ConfigBuilder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataMapper/Identifiers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-372">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="731">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/surefire-reports/2018-08-28T11-26-04_336-jvmRun1.dump">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test Results - C__Users_kguttiko_Documents_GitHub_keyword-driven-framework_testng_xml.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-323" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
@@ -877,10 +896,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataMapper/Identifiers.java">
+    <entry file="file://$PROJECT_DIR$/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataMapper/ConfigBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-613">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-304">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -889,8 +925,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/DataMapper/TestCaseRowIndexes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+        <state relative-caret-position="-287">
+          <caret line="25" column="71" selection-start-line="25" selection-start-column="71" selection-end-line="25" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#561#575#0" expanded="true" />
@@ -898,35 +934,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/surefire-reports/2018-08-28T11-26-04_336-jvmRun1.dump">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Actions/keywordActions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="28" column="9" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="9" />
+        <state relative-caret-position="141">
+          <caret line="221" column="51" selection-start-line="221" selection-start-column="51" selection-end-line="221" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test Results - C__Users_kguttiko_Documents_GitHub_keyword-driven-framework_testng_xml.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-323" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -982,7 +996,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>KeywordDrivenFramework</last-edited>
+          <last-edited>Keyword-Driven-Framework</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

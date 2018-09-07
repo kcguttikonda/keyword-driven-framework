@@ -26,15 +26,13 @@ public class automationEngine {
         testcasesData = reader.TestCaseReader(TestCasesPath);
         TestCaseRowIndexes testcases = new TestCaseRowIndexes();
         testcases.buildTestCasesList(ConfigBuilder.TestCases, testcasesData);
-        System.out.println(testcasesData.getLastRowNum());
-        System.out.println(TestCaseRowIndexes.testCaseRows);
         keywordActions.createDriverInstance(ConfigBuilder.Browser, ConfigBuilder.BrowserDriverPath);
     }
 
     @Test(dataProvider = "testCaseIds", dataProviderClass = ConfigBuilder.class)
     public void Engine(String testCaseId) throws IOException, InvalidFormatException, InterruptedException, InvocationTargetException, IllegalAccessException, NoSuchMethodException {
        System.out.println("Im in the @Test Method" +testCaseId);
-        try {
+
             System.out.println("Printing parameters form dataprovifrt" +testCaseId);
             System.out.println(String.format("Executing TestCase with ID: %S", testCaseId));
                 for (int i = 0; i < TestCaseRowIndexes.testCaseRows.get(testCaseId).size(); i++) {
@@ -46,10 +44,9 @@ public class automationEngine {
                 System.out.println(String.format("Executing Completes for TestCase with ID: %S", testCaseId));
 
         }
-        catch (Exception e){
-            System.out.println("test case fail"+e.getMessage());
-        }
-}
+            //catch (Exception e){
+            //System.out.println("test case fail"+e.getMessage());
+
     @AfterMethod
     public void TearDown(){
         keywordActions.driver.quit();

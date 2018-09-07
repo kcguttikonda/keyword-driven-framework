@@ -77,7 +77,7 @@ public class keywordActions
             }
             screen.getScreenShotsofTest(driver);
         } catch (Exception e) {
-            System.out.println("unable to invoke browser" + e.getMessage());
+            System.out.println("unable to invoke browser: " + e.getMessage());
 
         }
     }
@@ -91,7 +91,7 @@ public class keywordActions
         }
         //reflect.getMethodsIdentifiers();
         catch (Exception e){
-            System.out.println("unabele to clear/enter"+e.getMessage());
+            System.out.println("Unable to clear/enter: "+e.getMessage());
         }
 
     }
@@ -105,7 +105,7 @@ public class keywordActions
             screen.getScreenShotsofTest(driver);
         }
         catch (Exception e){
-            System.out.println("unabele to enter text"+e.getMessage());
+            System.out.println("Unable to enter text: "+e.getMessage());
         }
     }
 
@@ -118,7 +118,7 @@ public class keywordActions
             screen.getScreenShotsofTest(driver);
         }
         catch (Exception e){
-            System.out.println("unabele to click"+e.getMessage());
+            System.out.println("Unable to click: "+e.getMessage());
         }
     }
 
@@ -136,7 +136,7 @@ public class keywordActions
             //Thread.sleep(120000);
         }
         catch (Exception e){
-            System.out.println("unable to click and wait "+e.getMessage());
+            System.out.println("unable to click and wait:  "+e.getMessage());
         }
     }
 
@@ -159,7 +159,7 @@ public class keywordActions
             screen.getScreenShotsofTest(driver);
         }
         catch (Exception e){
-            System.out.println("unabele to verify text"+e.getMessage());
+            System.out.println("Unable to verify text: "+e.getMessage());
         }
     }
     public static void closeBrowser(String Identifier, String Locator, String InputData, String Action)
@@ -168,26 +168,23 @@ public class keywordActions
             driver.quit();
         }
         catch (Exception e){
-            System.out.println("unabele to close browser"+e.getMessage());
+            System.out.println("Unable to close browser"+e.getMessage());
         }
     }
 
-    public static void createConnection(String Identifier, String Locator, String InputData, String Action)
-    {
-        try {
+    public static void createConnection(String Identifier, String Locator, String InputData, String Action) throws InterruptedException {
             Map testmap = new LinkedHashMap();
             String[] inputInputDataArray = InputData.split(",");
 
             for (String str : inputInputDataArray) {
                 String[] eachString =str.split(":",2);
                 testmap.put(eachString[0], eachString[1]);
-
             }
             String currentURL = driver.getCurrentUrl();
             currentURL = currentURL.replace("applications","wistudio/connectiondetails");
             System.out.println(currentURL);
             driver.navigate().to(currentURL);
-            Thread.sleep(20000);
+            Thread.sleep(60000);
             String connectorXpath = "//div[contains(@class,'wi-card-title-connector') and contains(text()," + testmap.get("Connector") + ")]";
             driver.findElement(By.xpath(connectorXpath)).click();
             screen.getScreenShotsofTest(driver);
@@ -220,13 +217,14 @@ public class keywordActions
 
             String loginButton = "(//button[@type='button'])[8]";
             screen.getScreenShotsofTest(driver);
+            System.out.println("Before Login Click");
             driver.findElement(By.xpath(loginButton)).click();
+            System.out.println("After Login Click");
             screen.getScreenShotsofTest(driver);
             Thread.sleep(10000);
-        }
-        catch (Exception e){
-            System.out.println("unable to close browser: "+e.getMessage());
-        }
+       // catch (Exception e){
+            //System.out.println("unable to Create a Connection:  "+e.getMessage());
+
     }
 
 }
