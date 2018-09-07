@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a113ec6f-f4f0-40f3-9157-2f5033f4bdf0" name="Default Changelist" comment="-Implemented createConnection method in keywordsActions class which enables user to create connection with just one test step">
+    <list default="true" id="a113ec6f-f4f0-40f3-9157-2f5033f4bdf0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreEngine/automationEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/coreEngine/automationEngine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/coreEngine/automationEngine.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -62,7 +59,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="11038" />
-          <entry key="txt" value="804" />
+          <entry key="txt" value="843" />
           <entry key="xml" value="67" />
           <entry key="yml" value="73" />
         </counts>
@@ -70,7 +67,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="11038" />
-          <entry key="PLAIN_TEXT" value="804" />
+          <entry key="PLAIN_TEXT" value="843" />
           <entry key="XML" value="67" />
           <entry key="YAML" value="73" />
         </counts>
@@ -79,6 +76,7 @@
         <counts>
           <entry key="class" value="3" />
           <entry key="dump" value="2" />
+          <entry key="html" value="1" />
           <entry key="java" value="28" />
           <entry key="locatorstests" value="2" />
           <entry key="xml" value="6" />
@@ -88,6 +86,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="3" />
+          <entry key="HTML" value="1" />
           <entry key="JAVA" value="28" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="XML" value="6" />
@@ -222,15 +221,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Actions/locatorstests">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="37" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/coreEngine/KeywordActionsReflection.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="986">
@@ -304,87 +294,7 @@
             <path>
               <item name="keyword-driven-framework" type="b2602c69:ProjectViewProjectNode" />
               <item name="keyword-driven-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="Drivers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="keyword-driven-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="keyword-driven-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="keyword-driven-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="keyword-driven-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="keyword-driven-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="keyword-driven-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="keyword-driven-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="keyword-driven-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Actions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="keyword-driven-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="keyword-driven-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="coreEngine" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="keyword-driven-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="keyword-driven-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="DataMapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="keyword-driven-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="keyword-driven-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="keyword-driven-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="keyword-driven-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="TestData" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="keyword-driven-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="keyword-driven-framework" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="keyword-driven-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="keyword-driven-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="keyword-driven-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="keyword-driven-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="keyword-driven-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="keyword-driven-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="surefire-reports" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -395,11 +305,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536340695102" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536341224657" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -721,13 +632,17 @@
       <option name="project" value="LOCAL" />
       <updated>1536339061778</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="-Implemented ReportNG Reporting">
+      <created>1536340777461</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1536340777461</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_kguttiko_Documents_GitHub_keyword-driven-framework_testng_xml - 2018.09.07 at 17h 16m 28s.xml">
-      <configuration name="C:/Users/kguttiko/Documents/GitHub/keyword-driven-framework/testng.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="C__Users_kguttiko_Documents_GitHub_keyword-driven-framework_testng_xml - 2018.09.07 at 17h 28m 41s.xml">
       <configuration name="C:/Users/kguttiko/Documents/GitHub/keyword-driven-framework/testng.xml" configurationId="TestNG" />
     </history-entry>
@@ -753,6 +668,9 @@
       <configuration name="automationEngine (1)" configurationId="TestNG" />
     </history-entry>
     <history-entry file="automationEngine_(1) - 2018.09.07 at 22h 19m 43s.xml">
+      <configuration name="automationEngine (1)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="automationEngine_(1) - 2018.09.07 at 22h 53m 22s.xml">
       <configuration name="automationEngine (1)" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -831,7 +749,8 @@
     <MESSAGE value="-Implemented TestCaseRowIndexesClass which enables framework to run the test cases based upon the entries from config.yml&#10;-Added debug steps to check test case numbers" />
     <MESSAGE value="-Implemented createConnection method in keywordsActions class which enables user to create connection with just one test step" />
     <MESSAGE value="-Implemented parameterization with TestNG" />
-    <option name="LAST_COMMIT_MESSAGE" value="-Implemented parameterization with TestNG" />
+    <MESSAGE value="-Implemented ReportNG Reporting" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Implemented ReportNG Reporting" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/target/classes/Actions/keywordActions.class">
@@ -997,6 +916,11 @@
         <state relative-caret-position="135">
           <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test Results - C__Users_kguttiko_Documents_GitHub_keyword-driven-framework_testng_xml.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-323" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testng.xml">
