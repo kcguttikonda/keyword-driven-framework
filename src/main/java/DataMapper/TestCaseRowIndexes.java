@@ -6,6 +6,7 @@ import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -42,6 +43,7 @@ public class TestCaseRowIndexes {
         }
         catch (Exception e){
             System.out.println("unable to get row index"+e.getMessage());
+            Assert.fail("Failed to set row indexes");
         }
 
 

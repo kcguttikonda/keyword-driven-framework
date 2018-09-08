@@ -5,6 +5,7 @@ import DataMapper.Identifiers;
 import DataMapper.TestDataVariables;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.lang.reflect.InvocationTargetException;
@@ -25,6 +26,7 @@ public class KeywordActionsReflection {
         }
         catch (Exception e){
             System.out.println("unable get methods "+e.getMessage());
+            Assert.fail("Failed to get action methods");
         }
 
     }
@@ -41,6 +43,7 @@ public class KeywordActionsReflection {
         }
         catch (Exception e){
             System.out.println("unable invoke action methods"+e.getMessage());
+            Assert.fail("Failed to invoke one of the action method");
         }
 
 
@@ -62,6 +65,7 @@ public class KeywordActionsReflection {
         }
         catch (Exception e){
             System.out.println("unable to invoke identifier method" + e.getMessage());
+            Assert.fail("Failed to invoke identifier method");
         }
 
 

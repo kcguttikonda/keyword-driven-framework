@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 
 public class Identifiers {
@@ -32,6 +33,7 @@ public class Identifiers {
         }
         catch (Exception e){
             System.out.println("Invoke browser "+e.getMessage());
+            Assert.fail("Failed to element by xpath"+locator);
         }
         return element;
     }
@@ -47,6 +49,7 @@ public class Identifiers {
         catch (Exception e)
         {
             System.out.println("unable to find linktext"+locator+" "+e.getMessage());
+            Assert.fail("Failed to element by linktext"+locator);
         }
 
         return element;
@@ -61,6 +64,7 @@ public class Identifiers {
         }
         catch (Exception e){
             System.out.println("unable to find id"+locator+" "+e.getMessage());
+            Assert.fail("Failed to element by id"+locator);
         }
         return element;
     }
@@ -73,6 +77,7 @@ public class Identifiers {
         }
         catch (Exception e){
             System.out.println("unable to find classname"+locator+" "+e.getMessage());
+            Assert.fail("Failed to element by classname"+locator);
         }
         return element;
 
@@ -87,6 +92,7 @@ public class Identifiers {
         }
         catch (Exception e){
             System.out.println("unable to find paritaltext"+locator+" "+e.getMessage());
+            Assert.fail("Failed to element by partialtext"+locator);
         }
         return element;
     }
@@ -101,6 +107,7 @@ public class Identifiers {
         }
         catch (Exception e){
             System.out.println("unable to find css"+locator+" "+e.getMessage());
+            Assert.fail("Failed to element by CSS"+locator);
         }
         return element;
     }

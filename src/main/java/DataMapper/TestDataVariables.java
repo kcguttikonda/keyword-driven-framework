@@ -3,6 +3,7 @@ package DataMapper;
 import jdk.internal.util.xml.impl.Input;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
+import org.testng.Assert;
 
 import java.util.HashMap;
 import java.util.List;
@@ -39,6 +40,7 @@ public class TestDataVariables {
 
         catch (Exception e){
             System.out.println("unable to setvaribales "+e.getMessage());
+            Assert.fail("Failed to set data varibales");
         }
 
         System.out.println(TestCaseID);

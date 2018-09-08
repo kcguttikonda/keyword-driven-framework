@@ -1,5 +1,6 @@
 package DataMapper;
 
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.yaml.snakeyaml.Yaml;
@@ -24,6 +25,8 @@ public class ConfigBuilder {
 
     @DataProvider(name = "testCaseIds")
     public static Object[] configReader() {
+
+        Object[] testDataParameters=null;
         try{
             Yaml yaml = new Yaml();
 
@@ -58,14 +61,16 @@ public class ConfigBuilder {
             TestCasesPath=configMap.get("TestCasesPath").toString();
             BrowserDriverPath=configMap.get("BrowserDriverPath").toString();
             screenshotpath =configMap.get("screenshotspath").toString();
+            testDataParameters = TestCases.toArray();
+            System.out.println(testDataParameters);
+            System.out.println(TestCases);
         }
         catch (Exception e){
             System.out.println("Unable read config"+e.getMessage());
+            Assert.fail("Failed to get config data");
         }
 
-        Object[] testDataParameters = TestCases.toArray();
-        System.out.println(testDataParameters);
-        System.out.println(TestCases);
+
         return testDataParameters;
 
     }

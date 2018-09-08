@@ -5,6 +5,7 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 import java.io.File;
 import java.util.Random;
@@ -24,6 +25,7 @@ public class Capture {
 
         }
         catch (Exception e){
+
             e.getMessage();
         }
     }

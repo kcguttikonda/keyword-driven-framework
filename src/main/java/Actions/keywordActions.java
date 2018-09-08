@@ -13,6 +13,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
@@ -41,6 +43,7 @@ public class keywordActions
         }
         catch (Exception e){
             System.out.println("unable open url"+e.getMessage());
+            Assert.fail("Open URL failed"+InputData);
         }
     }
 
@@ -78,6 +81,7 @@ public class keywordActions
             screen.getScreenShotsofTest(driver);
         } catch (Exception e) {
             System.out.println("unable to invoke browser: " + e.getMessage());
+            Assert.fail("Driver invoke failed"+Browser);
 
         }
     }
@@ -92,6 +96,7 @@ public class keywordActions
         //reflect.getMethodsIdentifiers();
         catch (Exception e){
             System.out.println("Unable to clear/enter: "+e.getMessage());
+            Assert.fail("Failed to enter data"+Locator);
         }
 
     }
@@ -106,6 +111,7 @@ public class keywordActions
         }
         catch (Exception e){
             System.out.println("Unable to enter text: "+e.getMessage());
+            Assert.fail("Enter text failed"+Locator);
         }
     }
 
@@ -119,6 +125,7 @@ public class keywordActions
         }
         catch (Exception e){
             System.out.println("Unable to click: "+e.getMessage());
+            Assert.fail("Failed while clicking element"+Locator);
         }
     }
 
@@ -137,6 +144,7 @@ public class keywordActions
         }
         catch (Exception e){
             System.out.println("unable to click and wait:  "+e.getMessage());
+            Assert.fail("Failed to click and wait"+Locator);
         }
     }
 
@@ -160,6 +168,7 @@ public class keywordActions
         }
         catch (Exception e){
             System.out.println("Unable to verify text: "+e.getMessage());
+            Assert.fail("Element not found while verifying"+Locator);
         }
     }
     public static void closeBrowser(String Identifier, String Locator, String InputData, String Action)
@@ -169,10 +178,12 @@ public class keywordActions
         }
         catch (Exception e){
             System.out.println("Unable to close browser"+e.getMessage());
+            Assert.fail("Failed at close browser");
         }
     }
 
     public static void createConnection(String Identifier, String Locator, String InputData, String Action) throws InterruptedException {
+        try{
             Map testmap = new LinkedHashMap();
             String[] inputInputDataArray = InputData.split(",");
 
@@ -222,8 +233,13 @@ public class keywordActions
             System.out.println("After Login Click");
             screen.getScreenShotsofTest(driver);
             Thread.sleep(10000);
-       // catch (Exception e){
-            //System.out.println("unable to Create a Connection:  "+e.getMessage());
+
+        }
+
+        catch (Exception e) {
+            System.out.println("unable to Create a Connection:  " + e.getMessage());
+            Assert.fail("Failed to create connection");
+        }
 
     }
 

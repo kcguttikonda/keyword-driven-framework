@@ -4,6 +4,7 @@ import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.*;
@@ -31,6 +32,7 @@ public class ExcelReader {
         }
         catch (Exception e){
             System.out.println("Unable to read excel"+e.getMessage());
+            Assert.fail("Failed to get data from Excel");
         }
         //open a file
 
