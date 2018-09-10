@@ -3,6 +3,7 @@ package Actions;
 import DataMapper.Identifiers;
 import coreEngine.KeywordActionsReflection;
 import jdk.internal.util.xml.impl.Input;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -184,6 +185,12 @@ public class keywordActions
 
     public static void createConnection(String Identifier, String Locator, String InputData, String Action) throws InterruptedException {
         try{
+
+            String appName = RandomStringUtils.randomAlphanumeric(10);
+            String flowName = RandomStringUtils.randomAlphanumeric(10);
+            String connectionName = RandomStringUtils.randomAlphanumeric(10);
+            String connectionDescription = RandomStringUtils.randomAlphanumeric(10);
+
             Map testmap = new LinkedHashMap();
             String[] inputInputDataArray = InputData.split(",");
 
@@ -199,9 +206,6 @@ public class keywordActions
             String connectorXpath = "//div[contains(@class,'wi-card-title-connector') and contains(text()," + testmap.get("Connector") + ")]";
             driver.findElement(By.xpath(connectorXpath)).click();
             screen.getScreenShotsofTest(driver);
-
-
-
             //driver.findElement(By.xpath("//p-dialog[@id='connectionListModal']/div/div[2]")).click();
             screen.getScreenShotsofTest(driver);
             WebElement html = driver.findElement(By.tagName("html"));
@@ -222,7 +226,16 @@ public class keywordActions
 
                 } else {
                     String currentElementXpath = "//input[@id=" + "'" + currentElement + "']";
-                    driver.findElement(By.xpath(currentElementXpath)).sendKeys(currentElementValue);
+                    if(Locator.toLowerCase().contains("name")){
+                        driver.findElement(By.xpath(currentElementXpath)).sendKeys(connectionName);
+                    }
+                    else if(Locator.toLowerCase().contains("description")){
+                        driver.findElement(By.xpath(currentElementXpath)).sendKeys(connectionDescription);
+                    }
+                    else{
+                        driver.findElement(By.xpath(currentElementXpath)).sendKeys(currentElementValue);
+                    }
+
                 }
             }
 
